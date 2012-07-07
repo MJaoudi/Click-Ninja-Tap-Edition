@@ -9,8 +9,20 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface Firework : CCSprite {
-    
+typedef enum{
+  kBlueFirework = 62,
+  kRedFirekork = 56,
+  kGreenFirework = 49
+}FireworkColor;
+
+@interface Firework : CCSpriteBatchNode {
+  CCAnimation *redExplosion;
+  CCAnimation *blueExplosion;
+  CCAnimation *greenExplosion;
+  NSMutableArray *fireworks;
+  int index;
 }
+
+-(void)fire;
 
 @end

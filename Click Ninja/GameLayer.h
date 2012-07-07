@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "Firework.h"
+#import "Ninja.h"
 
 @interface GameLayer : CCLayer {
-    
+  Firework *firework;
+  Ninja *ninja;
 }
+
++(CCScene *) scene;
+
 
 @end
