@@ -10,10 +10,10 @@
 		6FB58E2815A8A97A0017825F /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB58E2715A8A97A0017825F /* GameLayer.m */; };
 		6FB58E2C15A8A9890017825F /* Ninja.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB58E2B15A8A9890017825F /* Ninja.m */; };
 		6FB58E2F15A8A9900017825F /* Firework.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB58E2E15A8A9900017825F /* Firework.m */; };
-		6FB58E3215A8AA290017825F /* Fireworks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58E3015A8AA290017825F /* Fireworks.plist */; };
-		6FB58E3315A8AA290017825F /* Fireworks.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58E3115A8AA290017825F /* Fireworks.png */; };
-		6FB58E3615A8AA300017825F /* Ninja.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58E3415A8AA300017825F /* Ninja.plist */; };
-		6FB58E3715A8AA300017825F /* Ninja.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58E3515A8AA300017825F /* Ninja.png */; };
+		6FB58E3A15A8AA970017825F /* Fireworks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58E3815A8AA970017825F /* Fireworks.plist */; };
+		6FB58E3B15A8AA970017825F /* Fireworks.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58E3915A8AA970017825F /* Fireworks.png */; };
+		6FB58E3E15A8AA9D0017825F /* Ninja.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58E3C15A8AA9D0017825F /* Ninja.plist */; };
+		6FB58E3F15A8AA9D0017825F /* Ninja.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58E3D15A8AA9D0017825F /* Ninja.png */; };
 		6FF267E815A50E1300923A0E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF267E715A50E1300923A0E /* QuartzCore.framework */; };
 		6FF267EA15A50E1300923A0E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF267E915A50E1300923A0E /* OpenGLES.framework */; };
 		6FF267EC15A50E1300923A0E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF267EB15A50E1300923A0E /* OpenAL.framework */; };
@@ -147,10 +147,10 @@
 		6FB58E2B15A8A9890017825F /* Ninja.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ninja.m; sourceTree = "<group>"; };
 		6FB58E2D15A8A9900017825F /* Firework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firework.h; sourceTree = "<group>"; };
 		6FB58E2E15A8A9900017825F /* Firework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Firework.m; sourceTree = "<group>"; };
-		6FB58E3015A8AA290017825F /* Fireworks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Fireworks.plist; path = "../../../Desktop/Click Ninja 1.15.38 PM/Click Ninja/Fireworks.plist"; sourceTree = "<group>"; };
-		6FB58E3115A8AA290017825F /* Fireworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fireworks.png; path = "../../../Desktop/Click Ninja 1.15.38 PM/Click Ninja/Fireworks.png"; sourceTree = "<group>"; };
-		6FB58E3415A8AA300017825F /* Ninja.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Ninja.plist; path = "../../../Desktop/Click Ninja 1.15.38 PM/Click Ninja/Ninja.plist"; sourceTree = "<group>"; };
-		6FB58E3515A8AA300017825F /* Ninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ninja.png; path = "../../../Desktop/Click Ninja 1.15.38 PM/Click Ninja/Ninja.png"; sourceTree = "<group>"; };
+		6FB58E3815A8AA970017825F /* Fireworks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Fireworks.plist; sourceTree = "<group>"; };
+		6FB58E3915A8AA970017825F /* Fireworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fireworks.png; sourceTree = "<group>"; };
+		6FB58E3C15A8AA9D0017825F /* Ninja.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ninja.plist; sourceTree = "<group>"; };
+		6FB58E3D15A8AA9D0017825F /* Ninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ninja.png; sourceTree = "<group>"; };
 		6FF267E315A50E1300923A0E /* Click Ninja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Click Ninja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF267E715A50E1300923A0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6FF267E915A50E1300923A0E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -478,10 +478,10 @@
 				6FB58E2B15A8A9890017825F /* Ninja.m */,
 				6FB58E2D15A8A9900017825F /* Firework.h */,
 				6FB58E2E15A8A9900017825F /* Firework.m */,
-				6FB58E3015A8AA290017825F /* Fireworks.plist */,
-				6FB58E3115A8AA290017825F /* Fireworks.png */,
-				6FB58E3415A8AA300017825F /* Ninja.plist */,
-				6FB58E3515A8AA300017825F /* Ninja.png */,
+				6FB58E3815A8AA970017825F /* Fireworks.plist */,
+				6FB58E3915A8AA970017825F /* Fireworks.png */,
+				6FB58E3C15A8AA9D0017825F /* Ninja.plist */,
+				6FB58E3D15A8AA9D0017825F /* Ninja.png */,
 				6FF267FA15A50E1300923A0E /* Resources */,
 				6FF2681215A50E1300923A0E /* libs */,
 				6FF2696B15A50E1500923A0E /* Supporting Files */,
@@ -913,10 +913,10 @@
 				6FF2680E15A50E1300923A0E /* Icon@2x.png in Resources */,
 				6FF2681115A50E1300923A0E /* iTunesArtwork in Resources */,
 				6FF2694F15A50E1500923A0E /* ChangeLog in Resources */,
-				6FB58E3215A8AA290017825F /* Fireworks.plist in Resources */,
-				6FB58E3315A8AA290017825F /* Fireworks.png in Resources */,
-				6FB58E3615A8AA300017825F /* Ninja.plist in Resources */,
-				6FB58E3715A8AA300017825F /* Ninja.png in Resources */,
+				6FB58E3A15A8AA970017825F /* Fireworks.plist in Resources */,
+				6FB58E3B15A8AA970017825F /* Fireworks.png in Resources */,
+				6FB58E3E15A8AA9D0017825F /* Ninja.plist in Resources */,
+				6FB58E3F15A8AA9D0017825F /* Ninja.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
