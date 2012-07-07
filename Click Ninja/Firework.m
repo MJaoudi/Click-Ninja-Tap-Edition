@@ -56,6 +56,7 @@
   return self;
 }
 
+
 -(void)fire{
   int rand = arc4random()%3;
   if(rand==0){
