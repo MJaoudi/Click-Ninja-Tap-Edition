@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>Red Firework_01.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {17, 16}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{17, 16}</string>
+			<key>spriteSourceSize</key>
+			<string>{17, 16}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{356, 806}, {17, 16}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_02.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {33, 35}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{33, 35}</string>
+			<key>spriteSourceSize</key>
+			<string>{33, 35}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{356, 769}, {33, 35}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_03.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {57, 56}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{57, 56}</string>
+			<key>spriteSourceSize</key>
+			<string>{57, 56}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{814, 537}, {57, 56}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_04.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {72, 73}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{72, 73}</string>
+			<key>spriteSourceSize</key>
+			<string>{72, 73}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{504, 1674}, {72, 73}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_05.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {87, 86}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{87, 86}</string>
+			<key>spriteSourceSize</key>
+			<string>{87, 86}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{504, 1586}, {87, 86}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_06.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {99, 98}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{99, 98}</string>
+			<key>spriteSourceSize</key>
+			<string>{99, 98}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{788, 1368}, {99, 98}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_07.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {109, 108}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{109, 108}</string>
+			<key>spriteSourceSize</key>
+			<string>{109, 108}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{762, 1536}, {109, 108}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_08.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {120, 119}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{120, 119}</string>
+			<key>spriteSourceSize</key>
+			<string>{120, 119}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{708, 1700}, {120, 119}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_09.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {130, 127}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{130, 127}</string>
+			<key>spriteSourceSize</key>
+			<string>{130, 127}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 1879}, {130, 127}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_10.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {137, 136}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{137, 136}</string>
+			<key>spriteSourceSize</key>
+			<string>{137, 136}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{153, 1745}, {137, 136}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_11.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {146, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{146, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{146, 144}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{356, 1586}, {146, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_12.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {151, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{151, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{151, 152}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 1725}, {151, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_13.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {157, 157}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{157, 157}</string>
+			<key>spriteSourceSize</key>
+			<string>{157, 157}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{197, 1586}, {157, 157}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_14.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {163, 162}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{163, 162}</string>
+			<key>spriteSourceSize</key>
+			<string>{163, 162}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{597, 1536}, {163, 162}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_15.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {168, 167}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{168, 167}</string>
+			<key>spriteSourceSize</key>
+			<string>{168, 167}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{815, 0}, {168, 167}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_16.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {172, 171}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{172, 171}</string>
+			<key>spriteSourceSize</key>
+			<string>{172, 171}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{803, 595}, {172, 171}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_17.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {176, 176}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{176, 176}</string>
+			<key>spriteSourceSize</key>
+			<string>{176, 176}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{411, 1184}, {176, 176}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_18.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {180, 179}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{180, 179}</string>
+			<key>spriteSourceSize</key>
+			<string>{180, 179}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{802, 786}, {180, 179}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_19.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {183, 182}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{183, 182}</string>
+			<key>spriteSourceSize</key>
+			<string>{183, 182}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{783, 975}, {183, 182}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_20.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {186, 185}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{186, 185}</string>
+			<key>spriteSourceSize</key>
+			<string>{186, 185}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{589, 1182}, {186, 185}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_21.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {188, 187}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{188, 187}</string>
+			<key>spriteSourceSize</key>
+			<string>{188, 187}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{612, 786}, {188, 187}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_22.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {189, 189}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{189, 189}</string>
+			<key>spriteSourceSize</key>
+			<string>{189, 189}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{612, 595}, {189, 189}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_23.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {192, 190}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{192, 190}</string>
+			<key>spriteSourceSize</key>
+			<string>{192, 190}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{589, 990}, {192, 190}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_24.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {195, 191}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{195, 191}</string>
+			<key>spriteSourceSize</key>
+			<string>{195, 191}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{204, 1393}, {195, 191}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_25.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {196, 192}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{196, 192}</string>
+			<key>spriteSourceSize</key>
+			<string>{196, 192}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{391, 990}, {196, 192}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_26.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {196, 193}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{196, 193}</string>
+			<key>spriteSourceSize</key>
+			<string>{196, 193}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{209, 395}, {196, 193}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_27.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {197, 193}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{197, 193}</string>
+			<key>spriteSourceSize</key>
+			<string>{197, 193}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{209, 200}, {197, 193}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_28.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {199, 194}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{199, 194}</string>
+			<key>spriteSourceSize</key>
+			<string>{199, 194}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{391, 794}, {199, 194}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_29.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {200, 195}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{200, 195}</string>
+			<key>spriteSourceSize</key>
+			<string>{200, 195}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{613, 0}, {200, 195}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_30.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {201, 195}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{201, 195}</string>
+			<key>spriteSourceSize</key>
+			<string>{201, 195}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{611, 398}, {201, 195}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_31.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {202, 196}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{202, 196}</string>
+			<key>spriteSourceSize</key>
+			<string>{202, 196}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{407, 398}, {202, 196}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_32.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {203, 197}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{203, 197}</string>
+			<key>spriteSourceSize</key>
+			<string>{203, 197}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{408, 199}, {203, 197}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_33.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {203, 197}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{203, 197}</string>
+			<key>spriteSourceSize</key>
+			<string>{203, 197}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{408, 0}, {203, 197}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_34.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {202, 198}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{202, 198}</string>
+			<key>spriteSourceSize</key>
+			<string>{202, 198}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 1195}, {202, 198}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_35.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {201, 196}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{201, 196}</string>
+			<key>spriteSourceSize</key>
+			<string>{201, 196}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{409, 596}, {201, 196}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_36.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 2}, {205, 196}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{205, 196}</string>
+			<key>spriteSourceSize</key>
+			<string>{205, 198}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{204, 1195}, {205, 196}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_37.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 2}, {205, 196}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{205, 196}</string>
+			<key>spriteSourceSize</key>
+			<string>{205, 198}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 799}, {205, 196}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_38.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {205, 197}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{205, 197}</string>
+			<key>spriteSourceSize</key>
+			<string>{205, 197}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 600}, {205, 197}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_39.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {205, 196}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{205, 196}</string>
+			<key>spriteSourceSize</key>
+			<string>{205, 196}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 997}, {205, 196}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_40.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {197, 198}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{197, 198}</string>
+			<key>spriteSourceSize</key>
+			<string>{197, 198}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{209, 0}, {197, 198}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_41.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {207, 198}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{207, 198}</string>
+			<key>spriteSourceSize</key>
+			<string>{207, 198}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {207, 198}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_42.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {207, 198}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{207, 198}</string>
+			<key>spriteSourceSize</key>
+			<string>{207, 198}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 200}, {207, 198}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_43.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {206, 198}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{206, 198}</string>
+			<key>spriteSourceSize</key>
+			<string>{206, 198}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 400}, {206, 198}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_44.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {199, 194}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 2}</string>
+			<key>spriteSize</key>
+			<string>{199, 194}</string>
+			<key>spriteSourceSize</key>
+			<string>{199, 198}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{613, 197}, {199, 194}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_45.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {182, 190}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{182, 190}</string>
+			<key>spriteSourceSize</key>
+			<string>{182, 190}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{207, 950}, {182, 190}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_46.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 6}, {194, 191}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -3}</string>
+			<key>spriteSize</key>
+			<string>{194, 191}</string>
+			<key>spriteSourceSize</key>
+			<string>{194, 197}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{401, 1393}, {194, 191}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_47.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {188, 184}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{188, 184}</string>
+			<key>spriteSourceSize</key>
+			<string>{188, 184}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{777, 1182}, {188, 184}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_48.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {200, 167}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{200, 167}</string>
+			<key>spriteSourceSize</key>
+			<string>{200, 167}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{207, 600}, {200, 167}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_49.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {196, 180}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{196, 180}</string>
+			<key>spriteSourceSize</key>
+			<string>{196, 180}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 1395}, {196, 180}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_50.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {168, 170}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{168, 170}</string>
+			<key>spriteSourceSize</key>
+			<string>{168, 170}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{814, 197}, {168, 170}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_51.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {189, 165}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{189, 165}</string>
+			<key>spriteSourceSize</key>
+			<string>{189, 165}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{597, 1369}, {189, 165}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_52.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {168, 166}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{168, 166}</string>
+			<key>spriteSourceSize</key>
+			<string>{168, 166}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{814, 369}, {168, 166}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_53.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {147, 179}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{147, 179}</string>
+			<key>spriteSourceSize</key>
+			<string>{147, 179}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{207, 769}, {147, 179}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_54.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {195, 146}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{195, 146}</string>
+			<key>spriteSourceSize</key>
+			<string>{195, 146}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 1577}, {195, 146}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_55.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {128, 137}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{128, 137}</string>
+			<key>spriteSourceSize</key>
+			<string>{128, 137}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{578, 1700}, {128, 137}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>Red Firework_56.png</key>
+		<dict>
+			<key>aliases</key>
+			<array>
+			
+			</array>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {140, 131}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{140, 131}</string>
+			<key>spriteSourceSize</key>
+			<string>{140, 131}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{356, 1732}, {140, 131}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>version</key>
+		<string>1.5.3</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{1024, 2048}</string>
+		<key>name</key>
+		<string>Untitled</string>
+		<key>premultipliedAlpha</key>
+		<false/>
+		<key>target</key>
+		<dict>
+			<key>name</key>
+			<string>default</string>
+			<key>textureFileName</key>
+			<string>Red_Fireworks</string>
+			<key>textureFileExtension</key>
+			<string>.png</string>
+			<key>coordinatesFileName</key>
+			<string>Red_Fireworks</string>
+			<key>coordinatesFileExtension</key>
+			<string>.plist</string>
+			<key>premultipliedAlpha</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>
