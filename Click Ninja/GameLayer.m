@@ -38,20 +38,23 @@
     ninja = [[Ninja alloc] init];
     ninja.position = ccp(240,160);
     [self addChild:ninja];
-    /*  CCSprite *sprite = [[CCSprite alloc] initWithFile:@"Shaolin Animation Kicking_1.png"];
-     sprite.position = ccp(240,160);
-     [self addChild:sprite];
-     CCAnimation *kick = [CCAnimation animationWithAnimationFrames:[NSArray arrayWithObjects:[CCSpriteFrame @"Shaolin Animation Kicking_1.png","Shaolin Animation Kicking_2.png",nil] delayPerUnit:0.02f loops:3];
-     CCAnimate *kicking = [CCAnimate actionWithAnimation:kick];
-     [sprite runAction:[CCRepeatForever actionWithAction:kicking]];*/
-    
-    //    [firework explode];
+
+    [self scheduleUpdate];
   }
 	return self;
 }
+
+-(void) update:(ccTime)dt{
+  delay++;
+  if(delay>40){
+    [ninja stopKicking];
+  }
+}
+
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
   [firework fire];
   [ninja startKicking];
+  delay=0;
 }
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc

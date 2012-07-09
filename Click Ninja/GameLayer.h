@@ -14,6 +14,8 @@
 @interface GameLayer : CCLayer {
   Firework *firework;
   Ninja *ninja;
+  
+  int delay;
 }
 
 +(CCScene *) scene;
