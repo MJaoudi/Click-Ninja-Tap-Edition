@@ -16,9 +16,14 @@
   Ninja *ninja;
   
   int delay;
+  
+  float timer;
+  
+  CCLabelTTF *timerLabel;
 }
 
 +(CCScene *) scene;
+-(void)timer:(ccTime)dt;
 
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "GameLayer.h"
+#import "GameOver.h"
 
 @implementation GameLayer
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
@@ -38,11 +39,27 @@
     ninja = [[Ninja alloc] init];
     ninja.position = ccp(240,160);
     [self addChild:ninja];
+    timer = 30.0f;
+    timerLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%f",timer] dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentLeft fontName:@"Helvetica" fontSize:30.0f];
+    timerLabel.position = ccp(50,290);
+    [self addChild:timerLabel];
 
     [self scheduleUpdate];
+    
+    [self schedule:@selector(timer:) interval:0.1f];
   }
 	return self;
 }
+
+-(void)timer:(ccTime)dt{
+  timer = timer - 0.1f;
+  [timerLabel setString:[NSString stringWithFormat:@"%.1f",timer]];
+  NSLog(@"%.1f",timer);
+  if(timer<=0.0f){
+    [[CCDirector  sharedDirector] replaceScene:[GameOver scene]];
+  }
+}
+     
 
 -(void) update:(ccTime)dt{
   delay++;

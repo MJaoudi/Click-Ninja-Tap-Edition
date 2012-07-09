@@ -11,6 +11,7 @@
 		6F0E1A5115AA2F8C00F23670 /* Fireworks-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0E1A4F15AA2F8C00F23670 /* Fireworks-hd.png */; };
 		6F0E1A5515AA7A9700F23670 /* Ninja-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F0E1A5315AA7A9700F23670 /* Ninja-hd.plist */; };
 		6F0E1A5615AA7A9700F23670 /* Ninja-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0E1A5415AA7A9700F23670 /* Ninja-hd.png */; };
+		6F0E1B3F15AA945200F23670 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E1B3E15AA945200F23670 /* GameOver.m */; };
 		6FB58E2815A8A97A0017825F /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB58E2715A8A97A0017825F /* GameLayer.m */; };
 		6FB58E2C15A8A9890017825F /* Ninja.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB58E2B15A8A9890017825F /* Ninja.m */; };
 		6FB58E2F15A8A9900017825F /* Firework.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB58E2E15A8A9900017825F /* Firework.m */; };
@@ -153,6 +154,8 @@
 		6F0E1A4F15AA2F8C00F23670 /* Fireworks-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fireworks-hd.png"; sourceTree = "<group>"; };
 		6F0E1A5315AA7A9700F23670 /* Ninja-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Ninja-hd.plist"; sourceTree = "<group>"; };
 		6F0E1A5415AA7A9700F23670 /* Ninja-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ninja-hd.png"; sourceTree = "<group>"; };
+		6F0E1B3D15AA945200F23670 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
+		6F0E1B3E15AA945200F23670 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
 		6FB58E2615A8A97A0017825F /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		6FB58E2715A8A97A0017825F /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		6FB58E2A15A8A9890017825F /* Ninja.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ninja.h; sourceTree = "<group>"; };
@@ -821,6 +824,8 @@
 				6FF2697315A50E1500923A0E /* HelloWorldLayer.m */,
 				6FB58E2615A8A97A0017825F /* GameLayer.h */,
 				6FB58E2715A8A97A0017825F /* GameLayer.m */,
+				6F0E1B3D15AA945200F23670 /* GameOver.h */,
+				6F0E1B3E15AA945200F23670 /* GameOver.m */,
 				6FB58E2A15A8A9890017825F /* Ninja.h */,
 				6FB58E2B15A8A9890017825F /* Ninja.m */,
 				6FB58E2D15A8A9900017825F /* Firework.h */,
@@ -1057,6 +1062,7 @@
 				6FB58F9715A8AAE20017825F /* vec2.c in Sources */,
 				6FB58F9815A8AAE20017825F /* vec3.c in Sources */,
 				6FB58F9915A8AAE20017825F /* vec4.c in Sources */,
+				6F0E1B3F15AA945200F23670 /* GameOver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
