@@ -19,7 +19,12 @@
   
   float timer;
   
+  int score;
+  
   CCLabelTTF *timerLabel;
+  CCLabelTTF *scoreLabel;
+  
+  CCSprite *button;
 }
 
 +(CCScene *) scene;

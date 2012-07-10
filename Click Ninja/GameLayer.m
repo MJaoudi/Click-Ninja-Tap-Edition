@@ -43,7 +43,14 @@
     timerLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%f",timer] dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentLeft fontName:@"Helvetica" fontSize:30.0f];
     timerLabel.position = ccp(50,290);
     [self addChild:timerLabel];
-
+    score = 0;
+    scoreLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%i",score] dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentLeft fontName:@"Helvetica" fontSize:30.0f];
+    scoreLabel.position = ccp(420,290);
+    [self addChild:scoreLabel];
+    button = [[CCSprite alloc] initWithFile:@"Button.png"];
+    button.position = ccp(240,160);
+    [self addChild:button];
+    
     [self scheduleUpdate];
     
     [self schedule:@selector(timer:) interval:0.1f];
@@ -59,7 +66,7 @@
     [[CCDirector  sharedDirector] replaceScene:[GameOver scene]];
   }
 }
-     
+
 
 -(void) update:(ccTime)dt{
   delay++;
@@ -69,9 +76,15 @@
 }
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-  [firework fire];
-  [ninja startKicking];
-  delay=0;
+  for(UITouch *touch in touches){
+    //  if(CGRectContainsPoint([touch locationInView:[touch view]])) {
+    [firework fire];
+    [ninja startKicking];
+    delay=0;
+    score++;
+    [scoreLabel setString:[NSString stringWithFormat:@"%i",score]];
+    //   }
+  }
 }
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc
