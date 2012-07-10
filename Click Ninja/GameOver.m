@@ -7,6 +7,7 @@
 //
 
 #import "GameOver.h"
+#import "GameLayer.h"
 
 @implementation GameOver
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
@@ -32,7 +33,12 @@
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
 
-    
+    CCMenuItem *item = [CCMenuItemFont itemWithString:@"Play Again!" block:^(id sender) {
+      [[CCDirector sharedDirector] replaceScene:[GameLayer scene]];
+    }];
+    CCMenu *menu = [CCMenu menuWithItems:item, nil];
+		[menu setPosition:ccp(240, 160)];
+    [self addChild:menu];
     
   }
 	return self;
