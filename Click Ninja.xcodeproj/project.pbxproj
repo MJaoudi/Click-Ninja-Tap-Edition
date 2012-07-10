@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F0E1B3F15AA945200F23670 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E1B3E15AA945200F23670 /* GameOver.m */; };
+		6F994F7B15ABCEDD00BE85DF /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F994F7A15ABCEDD00BE85DF /* Button.png */; };
 		6FB58E2815A8A97A0017825F /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB58E2715A8A97A0017825F /* GameLayer.m */; };
 		6FB58E2C15A8A9890017825F /* Ninja.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB58E2B15A8A9890017825F /* Ninja.m */; };
 		6FB58E2F15A8A9900017825F /* Firework.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB58E2E15A8A9900017825F /* Firework.m */; };
@@ -148,6 +149,7 @@
 /* Begin PBXFileReference section */
 		6F0E1B3D15AA945200F23670 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
 		6F0E1B3E15AA945200F23670 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
+		6F994F7A15ABCEDD00BE85DF /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		6FB58E2615A8A97A0017825F /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		6FB58E2715A8A97A0017825F /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		6FB58E2A15A8A9890017825F /* Ninja.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ninja.h; sourceTree = "<group>"; };
@@ -826,6 +828,7 @@
 				6FB58E3915A8AA970017825F /* Fireworks.png */,
 				6FB58E3C15A8AA9D0017825F /* Ninja.plist */,
 				6FB58E3D15A8AA9D0017825F /* Ninja.png */,
+				6F994F7A15ABCEDD00BE85DF /* Button.png */,
 				6FF267FA15A50E1300923A0E /* Resources */,
 				6FF2696B15A50E1500923A0E /* Supporting Files */,
 			);
@@ -930,6 +933,7 @@
 				6FB58F9A15A8AAE20017825F /* LICENSE_cocos2d.txt in Resources */,
 				6FB58F9B15A8AAE20017825F /* LICENSE_CocosDenshion.txt in Resources */,
 				6FB58F9C15A8AAE20017825F /* LICENSE_Kazmath.txt in Resources */,
+				6F994F7B15ABCEDD00BE85DF /* Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1110,6 +1114,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1130,6 +1135,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
