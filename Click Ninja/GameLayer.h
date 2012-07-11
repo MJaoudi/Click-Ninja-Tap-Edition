@@ -11,7 +11,7 @@
 #import "Firework.h"
 #import "Ninja.h"
 
-@interface GameLayer : CCLayer {
+@interface GameLayer : CCLayerColor {
   Firework *firework;
   Ninja *ninja;
   
