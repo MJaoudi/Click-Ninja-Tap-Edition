@@ -61,7 +61,7 @@
 -(void)timer:(ccTime)dt{
   timer = timer - 0.1f;
   [timerLabel setString:[NSString stringWithFormat:@"%.1f",timer]];
-  NSLog(@"%.1f",timer);
+  //NSLog(@"%.1f",timer);
   if(timer<=0.0f){
     [[CCDirector  sharedDirector] replaceScene:[GameOver scene]];
   }
@@ -76,15 +76,28 @@
 }
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-  for(UITouch *touch in touches){
-    //  if(CGRectContainsPoint([touch locationInView:[touch view]])) {
+
+  UITouch *touch = [touches anyObject];
+  CGPoint touchLocation = [self convertTouchToNodeSpace:touch];
+  
+  CGPoint buttonLocation = [button convertToNodeSpace:touchLocation];
+  CGRect buttonRect = [button textureRect];
+  buttonRect.origin = CGPointZero;
+  
+  
+  if(CGRectContainsPoint(buttonRect, buttonLocation))
+  {
+    NSLog(@"yay for buttooooons");
     [firework fire];
     [ninja startKicking];
     delay=0;
     score++;
     [scoreLabel setString:[NSString stringWithFormat:@"%i",score]];
-    //   }
   }
+  
+  
+
+
 }
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc
