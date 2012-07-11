@@ -31,7 +31,7 @@
 {
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
-	if( (self=[super initWithColor:ccc4(64,64,64,255)]) ) {
+	if( (self=[super initWithColor:ccc4(32,32,32,255)]) ) {
     self.isTouchEnabled = YES;
     firework = [[Firework alloc] init];
     firework.position = ccp(240,160);
@@ -40,12 +40,12 @@
     ninja.position = ccp(150,160);
     [self addChild:ninja];
     timer = 30.0f;
-    timerLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%f",timer] dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentLeft fontName:@"Helvetica" fontSize:30.0f];
-    timerLabel.position = ccp(55,290);
+    timerLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%f",timer] dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentLeft fontName:@"DomoAregato" fontSize:30.0f];
+    timerLabel.position = ccp(55,285);
     [self addChild:timerLabel];
     score = 0;
-    scoreLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%i",score] dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentRight fontName:@"Helvetica" fontSize:30.0f];
-    scoreLabel.position = ccp(420,290);
+    scoreLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%i",score] dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentRight fontName:@"DomoAregato" fontSize:30.0f];
+    scoreLabel.position = ccp(420,285);
     [self addChild:scoreLabel];
     button = [[CCSprite alloc] initWithFile:@"Button.png"];
     button.position = ccp(240,160);

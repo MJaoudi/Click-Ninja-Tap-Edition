@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15E50DC015AD4AAB0076918A /* DomoAregato.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15E50DBF15AD4AAB0076918A /* DomoAregato.ttf */; };
 		6F0E1B3F15AA945200F23670 /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E1B3E15AA945200F23670 /* GameOver.m */; };
 		6F994F7B15ABCEDD00BE85DF /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F994F7A15ABCEDD00BE85DF /* Button.png */; };
 		6FB58E2815A8A97A0017825F /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB58E2715A8A97A0017825F /* GameLayer.m */; };
@@ -147,6 +148,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15E50DBF15AD4AAB0076918A /* DomoAregato.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DomoAregato.ttf; sourceTree = "<group>"; };
 		6F0E1B3D15AA945200F23670 /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
 		6F0E1B3E15AA945200F23670 /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
 		6F994F7A15ABCEDD00BE85DF /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
@@ -838,6 +840,7 @@
 		6FF267FA15A50E1300923A0E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				15E50DBF15AD4AAB0076918A /* DomoAregato.ttf */,
 				6FF267FB15A50E1300923A0E /* Default.png */,
 				6FF267FD15A50E1300923A0E /* fps_images.png */,
 				6FF267FF15A50E1300923A0E /* fps_images-hd.png */,
@@ -934,6 +937,7 @@
 				6FB58F9B15A8AAE20017825F /* LICENSE_CocosDenshion.txt in Resources */,
 				6FB58F9C15A8AAE20017825F /* LICENSE_Kazmath.txt in Resources */,
 				6F994F7B15ABCEDD00BE85DF /* Button.png in Resources */,
+				15E50DC015AD4AAB0076918A /* DomoAregato.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
