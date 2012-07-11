@@ -37,7 +37,7 @@
       [[CCDirector sharedDirector] replaceScene:[GameLayer scene]];
     }];
     CCMenu *menu = [CCMenu menuWithItems:item, nil];
-		[menu setPosition:ccp(240, 160)];
+		[menu setPosition:ccp(240, 60)];
     [self addChild:menu];
     
   }
