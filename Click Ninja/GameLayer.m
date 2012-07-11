@@ -34,10 +34,10 @@
 	if( (self=[super init]) ) {
     self.isTouchEnabled = YES;
     firework = [[Firework alloc] init];
-    firework.position = ccp(100,100);
+    firework.position = ccp(240,160);
     [self addChild:firework];
     ninja = [[Ninja alloc] init];
-    ninja.position = ccp(240,160);
+    ninja.position = ccp(150,160);
     [self addChild:ninja];
     timer = 30.0f;
     timerLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%f",timer] dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentLeft fontName:@"Helvetica" fontSize:30.0f];
