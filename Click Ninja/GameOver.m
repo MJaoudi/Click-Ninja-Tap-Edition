@@ -32,7 +32,7 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
-
+    [CCMenuItemFont setFontName:@"DomoAregato"];
     CCMenuItem *item = [CCMenuItemFont itemWithString:@"Play Again!" block:^(id sender) {
       [[CCDirector sharedDirector] replaceScene:[GameLayer scene]];
     }];

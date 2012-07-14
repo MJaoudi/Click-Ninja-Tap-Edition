@@ -41,7 +41,7 @@
   
   
   jump = [[CCAnimation alloc]  initWithSpriteFrames:jumpFrames delay:0.1f];
-  kick = [[CCAnimation alloc]  initWithSpriteFrames:kickFrames delay:0.1f];
+  kick = [[CCAnimation alloc]  initWithSpriteFrames:kickFrames delay:0.08f];
   land = [[CCAnimation alloc]  initWithSpriteFrames:landFrames delay:0.1f];
   
   ninja = [[CCSprite alloc] initWithSpriteFrameName:@"Kick01.png"];

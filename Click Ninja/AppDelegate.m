@@ -46,6 +46,7 @@
 	// for rotation and other messages
 	[director_ setDelegate:self];
   
+  
 	// 2D projection
 	[director_ setProjection:kCCDirectorProjection2D];
   //	[director setProjection:kCCDirectorProjection3D];
@@ -59,8 +60,8 @@
 	navController_.navigationBarHidden = YES;
   
 	// set the Navigation Controller as the root view controller
-  //	[window_ setRootViewController:rootViewController_];
-	[window_ addSubview:navController_.view];
+  	[window_ setRootViewController:navController_];
+	//[window_ addSubview:navController_.view];
   
 	// make main window visible
 	[window_ makeKeyAndVisible];

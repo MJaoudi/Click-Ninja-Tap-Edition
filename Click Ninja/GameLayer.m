@@ -31,25 +31,45 @@
 {
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
-	if( (self=[super initWithColor:ccc4(32,32,32,255)]) ) {
+	if( (self=[super initWithColor:ccc4(104,152,217,255)]) ) {
     self.isTouchEnabled = YES;
     firework = [[Firework alloc] init];
     firework.position = ccp(240,160);
     [self addChild:firework];
     ninja = [[Ninja alloc] init];
     ninja.position = ccp(150,160);
-    [self addChild:ninja];
+    ninja.anchorPoint = ccp(0.5,.7);
+    [self addChild:ninja z:10];
     timer = 30.0f;
-    timerLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%f",timer] dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentLeft fontName:@"DomoAregato" fontSize:30.0f];
-    timerLabel.position = ccp(55,285);
+    
+    timerLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"Time:%f",timer] dimensions:CGSizeMake(130, 45) hAlignment:kCCTextAlignmentLeft fontName:@"DomoAregato" fontSize:30.0f];
+    timerLabel.position = ccp(75,285);
+    timerLabel.color = ccc3(0, 0, 0);
     [self addChild:timerLabel];
+    
     score = 0;
     scoreLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%i",score] dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentRight fontName:@"DomoAregato" fontSize:30.0f];
-    scoreLabel.position = ccp(420,285);
+    scoreLabel.position = ccp(240,200);
+    scoreLabel.color = ccc3(0, 0, 0);
     [self addChild:scoreLabel];
+    
     button = [[CCSprite alloc] initWithFile:@"Button.png"];
-    button.position = ccp(240,160);
+    button.position = ccp(238,160);
     [self addChild:button];
+    
+    
+    CCSprite *hill = [CCSprite spriteWithFile:@"Hill.png"];
+    hill.position = ccp(150, 60);
+    [self addChild:hill z:0];
+    
+    CCSprite *hill2 = [CCSprite spriteWithFile:@"Hill.png"];
+    hill2.position = ccp(430, 40);
+    [self addChild:hill2 z:0];
+    
+    CCSprite *tree = [CCSprite spriteWithFile:@"Tree.png"];
+    tree.position = ccp(430,220);
+    [self addChild:tree];
+    
     
     [self scheduleUpdate];
     
@@ -60,7 +80,7 @@
 
 -(void)timer:(ccTime)dt{
   timer = timer - 0.1f;
-  [timerLabel setString:[NSString stringWithFormat:@"%.1f",timer]];
+  [timerLabel setString:[NSString stringWithFormat:@"Time:%.1f",timer]];
   //NSLog(@"%.1f",timer);
   if(timer<=0.0f){
     [[CCDirector  sharedDirector] replaceScene:[GameOver scene]];

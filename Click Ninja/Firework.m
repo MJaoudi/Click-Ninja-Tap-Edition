@@ -13,7 +13,8 @@
 
 -(id)init{
   
-  
+ // [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+
   [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:
    @"Fireworks.plist"];
   self = [super initWithFile:@"Fireworks.png" capacity:150];
@@ -41,9 +42,9 @@
   
   fireworks = [[NSMutableArray alloc] init];
   
-  redExplosion = [[CCAnimation alloc]  initWithSpriteFrames:redFrames delay:0.02f];
-  blueExplosion = [[CCAnimation alloc]  initWithSpriteFrames:blueFrames delay:0.02f];
-  greenExplosion = [[CCAnimation alloc]  initWithSpriteFrames:greenFrames delay:0.02f];
+  redExplosion = [[CCAnimation alloc]  initWithSpriteFrames:redFrames delay:0.01f];
+  blueExplosion = [[CCAnimation alloc]  initWithSpriteFrames:blueFrames delay:0.01f];
+  greenExplosion = [[CCAnimation alloc]  initWithSpriteFrames:greenFrames delay:0.01f];
   
   for(int x=0;x<15;x++){
     CCSprite *sprite = [[CCSprite alloc] initWithSpriteFrameName:@"Blue Firework_01.png"];
@@ -53,6 +54,8 @@
   
   index = 0;
   
+  //[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
+
   return self;
 }
 
@@ -68,9 +71,9 @@
   else if(rand==2){
     [[fireworks objectAtIndex:index] runAction:[CCSpawn actions:[CCFadeIn actionWithDuration:0],[CCAnimate actionWithAnimation:greenExplosion],[CCFadeOut actionWithDuration:1.0f], nil]];
   }
-  double angle = floorf(((double)arc4random() / M_PI/4) - 0.2f);
-  
-  [[fireworks objectAtIndex:index] runAction:[CCSequence actions:[CCMoveTo actionWithDuration:1.0f position:CGPointMake(200*cos(angle), 200*sin(angle))], [CCMoveTo actionWithDuration:0.0f position:CGPointMake(0,0)],nil]];
+  int angle = arc4random()%180;
+  NSLog(@"Angle:%i to:%f",angle, M_PI/angle*180);
+  [[fireworks objectAtIndex:index] runAction:[CCSequence actions:[CCMoveTo actionWithDuration:1.0f position:CGPointMake(200*cos(angle*M_PI/180), 200*sin(angle*M_PI/180))], [CCMoveTo actionWithDuration:0.0f position:CGPointMake(0,0)],nil]];
   index = (index+1)%[fireworks count];
   
 }
