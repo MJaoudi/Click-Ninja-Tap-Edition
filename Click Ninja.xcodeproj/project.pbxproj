@@ -125,6 +125,8 @@
 		6FB58F9A15A8AAE20017825F /* LICENSE_cocos2d.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58F3115A8AAE20017825F /* LICENSE_cocos2d.txt */; };
 		6FB58F9B15A8AAE20017825F /* LICENSE_CocosDenshion.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58F3215A8AAE20017825F /* LICENSE_CocosDenshion.txt */; };
 		6FB58F9C15A8AAE20017825F /* LICENSE_Kazmath.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6FB58F3315A8AAE20017825F /* LICENSE_Kazmath.txt */; };
+		6FE3182815B5129600118870 /* epic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FE3182715B5129600118870 /* epic.mp3 */; };
+		6FE3182A15B5131C00118870 /* 135_short_day-of-reckoning_0034.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FE3182915B5131C00118870 /* 135_short_day-of-reckoning_0034.mp3 */; };
 		6FF267E815A50E1300923A0E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF267E715A50E1300923A0E /* QuartzCore.framework */; };
 		6FF267EA15A50E1300923A0E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF267E915A50E1300923A0E /* OpenGLES.framework */; };
 		6FF267EC15A50E1300923A0E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF267EB15A50E1300923A0E /* OpenAL.framework */; };
@@ -398,6 +400,8 @@
 		6FB58F3115A8AAE20017825F /* LICENSE_cocos2d.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_cocos2d.txt; sourceTree = "<group>"; };
 		6FB58F3215A8AAE20017825F /* LICENSE_CocosDenshion.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_CocosDenshion.txt; sourceTree = "<group>"; };
 		6FB58F3315A8AAE20017825F /* LICENSE_Kazmath.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_Kazmath.txt; sourceTree = "<group>"; };
+		6FE3182715B5129600118870 /* epic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = epic.mp3; sourceTree = "<group>"; };
+		6FE3182915B5131C00118870 /* 135_short_day-of-reckoning_0034.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "135_short_day-of-reckoning_0034.mp3"; sourceTree = "<group>"; };
 		6FF267E315A50E1300923A0E /* Click Ninja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Click Ninja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF267E715A50E1300923A0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6FF267E915A50E1300923A0E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -837,6 +841,8 @@
 				6F994F7A15ABCEDD00BE85DF /* Button.png */,
 				6F052DDF15B1D7F00012C456 /* Hill.png */,
 				6F052DE515B1E1790012C456 /* Tree.png */,
+				6FE3182715B5129600118870 /* epic.mp3 */,
+				6FE3182915B5131C00118870 /* 135_short_day-of-reckoning_0034.mp3 */,
 				6FF267FA15A50E1300923A0E /* Resources */,
 				6FF2696B15A50E1500923A0E /* Supporting Files */,
 			);
@@ -946,6 +952,8 @@
 				6F052DDE15B1D75A0012C456 /* Firework.png in Resources */,
 				6F052DE015B1D7F00012C456 /* Hill.png in Resources */,
 				6F052DE615B1E1790012C456 /* Tree.png in Resources */,
+				6FE3182815B5129600118870 /* epic.mp3 in Resources */,
+				6FE3182A15B5131C00118870 /* 135_short_day-of-reckoning_0034.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

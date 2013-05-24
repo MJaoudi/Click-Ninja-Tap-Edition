@@ -75,6 +75,8 @@
     
     [self schedule:@selector(timer:) interval:0.1f];
   }
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"135_short_day-of-reckoning_0034.mp3"];//play background music
+
 	return self;
 }
 

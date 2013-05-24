@@ -16,8 +16,8 @@
  // [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 
   [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:
-   @"Fireworks.plist"];
-  self = [super initWithFile:@"Fireworks.png" capacity:150];
+   @"Firework.plist"];
+  self = [super initWithFile:@"Firework.png" capacity:150];
   // self = [[CCSpriteBatchNode batchNodeWithFile:@"Blue Fireworks_default.png"] retain];
   NSMutableArray *redFrames = [NSMutableArray array];
   for(int i = 1; i <= 56; ++i) {
