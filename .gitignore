@@ -16,3 +16,6 @@ build/*
 *.pbxuser
 *.xcworkspace
 xcuserdata
+
+Pods/
+Podfile.lock
