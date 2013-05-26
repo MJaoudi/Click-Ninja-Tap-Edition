@@ -35,7 +35,7 @@
 	director_.wantsFullScreenLayout = YES;
   
 	// Display FSP and SPF
-	[director_ setDisplayStats:NO];
+	[director_ setDisplayStats:YES];
   
 	// set FPS at 60
 	[director_ setAnimationInterval:1.0/60];
@@ -52,7 +52,7 @@
   //	[director setProjection:kCCDirectorProjection3D];
   
 	// Enables High Res mode (Retina Display) on iPhone 4 and maintains low res on all other devices
-	if( ! [director_ enableRetinaDisplay:NO] )
+	if( ! [director_ enableRetinaDisplay:YES] )
 		CCLOG(@"Retina Display Not supported");
   
 	// Create a Navigation Controller with the Director

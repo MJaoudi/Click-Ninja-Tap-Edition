@@ -18,7 +18,7 @@
   
   int delay;
   
-  float timer;
+  int time;
   
   int score;
   

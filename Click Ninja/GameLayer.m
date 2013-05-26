@@ -31,8 +31,9 @@
 {
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
-	if( (self=[super initWithColor:ccc4(104,152,217,255)]) ) {
+	if( (self=[super initWithColor:ccc4(103,151,223,255)]) ) {
         [self setTouchEnabled:YES];
+        
         firework = [[Firework alloc] init];
         firework.position = ccp(240,160);
         [self addChild:firework];
@@ -40,10 +41,10 @@
         ninja.position = ccp(150,160);
         ninja.anchorPoint = ccp(0.5,.7);
         [self addChild:ninja z:10];
-        timer = 30.0f;
+        time = 30;
         
         
-        timerLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"Time:%f",timer] fontName:@"DomoAregato" fontSize:30.0f dimensions:CGSizeMake(130, 45) hAlignment:kCCTextAlignmentLeft];
+        timerLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"Time:%i",time] fontName:@"DomoAregato" fontSize:30.0f dimensions:CGSizeMake(130, 45) hAlignment:kCCTextAlignmentLeft];
         timerLabel.position = ccp(75,285);
         timerLabel.color = ccc3(0, 0, 0);
         [self addChild:timerLabel];
@@ -73,20 +74,22 @@
         
         
         [self scheduleUpdate];
-        
-        [self schedule:@selector(timer:) interval:0.1f];
+    
+        [self schedule:@selector(timer:) interval:1.0f];
     }
-    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"135_short_day-of-reckoning_0034.mp3"];//play background music
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Epic.mp3" loop:NO];//play background music
     
 	return self;
 }
 
 -(void)timer:(ccTime)dt{
-    timer = timer - 0.1f;
-    [timerLabel setString:[NSString stringWithFormat:@"Time:%.1f",timer]];
+    time = time - 1.0f;
+    [timerLabel setString:[NSString stringWithFormat:@"Time:%i",time]];
     //NSLog(@"%.1f",timer);
-    if(timer<=0.0f){
+    
+    if(time <= 0){
         [[CCDirector  sharedDirector] replaceScene:[GameOver scene]];
+        
     }
 }
 
@@ -110,7 +113,6 @@
     
     if(CGRectContainsPoint(buttonRect, buttonLocation))
     {
-        NSLog(@"yay for buttooooons");
         [firework fire];
         [ninja startKicking];
         delay=0;

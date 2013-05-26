@@ -52,7 +52,8 @@
 -(void)startKicking{
   if(kicking){ return; }
   
-  [ninja runAction:[CCSequence actions:[CCAnimate actionWithAnimation:jump], [CCRepeat actionWithAction:[CCAnimate actionWithAnimation:kick] times:INT_MAX],nil]];
+  [ninja runAction:[CCSequence actions:[CCAnimate actionWithAnimation:jump],[CCRepeat actionWithAction:[CCAnimate actionWithAnimation:kick] times:NSUIntegerMax], nil]];
+    
   
   kicking = TRUE;
   

@@ -39,6 +39,9 @@
     CCMenu *menu = [CCMenu menuWithItems:item, nil];
 		[menu setPosition:ccp(240, 60)];
     [self addChild:menu];
+        [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+//        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"HighscoreMusic.mp3" loop:YES];
+
     
   }
 	return self;
