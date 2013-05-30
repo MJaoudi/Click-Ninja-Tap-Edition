@@ -2,15 +2,16 @@
 //  AppDelegate.m
 //  Click Ninja
 //
-//  Created by Michael Jaoudi on 7/4/12.
-//  Copyright __MyCompanyName__ 2012. All rights reserved.
+//  Created by Mike Jaoudi on 7/4/12.
+//  Copyright Mike Jaoudi 2012. All rights reserved.
 //
 
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
-//#import "HelloWorldLayer.h"
-#import "GameLayer.h"
+#import "Menu.h"
+
+
 @implementation AppController
 
 @synthesize window=window_, navController=navController_, director=director_;
@@ -84,8 +85,10 @@
 	// Assume that PVR images have premultiplied alpha
 	[CCTexture2D PVRImagesHavePremultipliedAlpha:YES];
   
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:
+     @"Elements.plist"];
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
-	[director_ pushScene: [GameLayer scene]]; 
+	[director_ pushScene: [Menu scene]];
   
 	return YES;
 }

@@ -2,8 +2,8 @@
 //  GameLayer.m
 //  Click Ninja
 //
-//  Created by Michael Jaoudi on 7/4/12.
-//  Copyright 2012 __MyCompanyName__. All rights reserved.
+//  Created by Mike Jaoudi on 7/4/12.
+//  Copyright 2012 Mike Jaoudi. All rights reserved.
 //
 
 #import "GameLayer.h"
@@ -34,11 +34,13 @@
 	if( (self=[super initWithColor:ccc4(103,151,223,255)]) ) {
         [self setTouchEnabled:YES];
         
+        CGSize size = [[CCDirector sharedDirector] winSize];
+
         firework = [[Firework alloc] init];
-        firework.position = ccp(240,160);
+        firework.position = ccp(size.width/2,150);
         [self addChild:firework];
         ninja = [[Ninja alloc] init];
-        ninja.position = ccp(150,160);
+        ninja.position = ccp(size.width/2-90,160);
         ninja.anchorPoint = ccp(0.5,.7);
         [self addChild:ninja z:10];
         time = 30;
@@ -51,32 +53,38 @@
         
         score = 0;
         scoreLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%i",score] fontName:@"DomoAregato" fontSize:30.0f dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentRight ]; 
-        scoreLabel.position = ccp(240,200);
+        scoreLabel.position = ccp(size.width/2,200);
         scoreLabel.color = ccc3(0, 0, 0);
         [self addChild:scoreLabel];
         
-        button = [[CCSprite alloc] initWithFile:@"Button.png"];
-        button.position = ccp(238,160);
+        button = [[CCSprite alloc] initWithSpriteFrameName:@"TapButton.png"];
+        button.position = ccp(size.width/2,160);
         [self addChild:button];
         
         
-        CCSprite *hill = [CCSprite spriteWithFile:@"Hill.png"];
-        hill.position = ccp(150, 60);
+        CCSprite *hill = [[CCSprite alloc] initWithSpriteFrameName:@"Hill.png"];
+        hill.position = ccp(size.width/2-90, 60);
         [self addChild:hill z:0];
         
-        CCSprite *hill2 = [CCSprite spriteWithFile:@"Hill.png"];
-        hill2.position = ccp(430, 40);
+        CCSprite *hill2 = [[CCSprite alloc] initWithSpriteFrameName:@"Hill.png"];
+        hill2.position = ccp(size.width/2+190, 40);
         [self addChild:hill2 z:0];
         
-        CCSprite *tree = [CCSprite spriteWithFile:@"Tree.png"];
-        tree.position = ccp(430,220);
+        CCSprite *tree = [[CCSprite alloc] initWithSpriteFrameName:@"Tree3.png"];
+        tree.position = ccp(size.width/2+190,220);
         [self addChild:tree];
         
         
+        particleSystem = [CCParticleSystemQuad particleWithFile:@"Wood.plist"];
+        particleSystem.position = ccp(button.position.x-button.contentSize.width/2, button.position.y);
+        [self addChild:particleSystem];
+        
+        [particleSystem stopSystem];
         [self scheduleUpdate];
     
         [self schedule:@selector(timer:) interval:1.0f];
     }
+    NSLog(@"BLAH!!");
     [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Epic.mp3" loop:NO];//play background music
     
 	return self;
@@ -97,6 +105,7 @@
 -(void) update:(ccTime)dt{
     delay++;
     if(delay>40){
+        [particleSystem stopSystem];
         [ninja stopKicking];
     }
 }
@@ -113,11 +122,16 @@
     
     if(CGRectContainsPoint(buttonRect, buttonLocation))
     {
+        
         [firework fire];
         [ninja startKicking];
         delay=0;
         score++;
         [scoreLabel setString:[NSString stringWithFormat:@"%i",score]];
+        if(![particleSystem active]){
+            
+            [particleSystem runAction:[CCSequence actions:[CCDelayTime actionWithDuration:0.2], [CCCallFunc actionWithTarget:particleSystem selector:@selector(resetSystem)], nil]];
+        }
     }
     
     

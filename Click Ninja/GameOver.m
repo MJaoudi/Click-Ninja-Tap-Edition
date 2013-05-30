@@ -2,8 +2,8 @@
 //  GameLayer.m
 //  Click Ninja
 //
-//  Created by Michael Jaoudi on 7/4/12.
-//  Copyright 2012 __MyCompanyName__. All rights reserved.
+//  Created by Mike Jaoudi on 7/4/12.
+//  Copyright 2012 Mike Jaoudi. All rights reserved.
 //
 
 #import "GameOver.h"
@@ -32,18 +32,19 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
-    [CCMenuItemFont setFontName:@"DomoAregato"];
-    CCMenuItem *item = [CCMenuItemFont itemWithString:@"Play Again!" block:^(id sender) {
-      [[CCDirector sharedDirector] replaceScene:[GameLayer scene]];
-    }];
-    CCMenu *menu = [CCMenu menuWithItems:item, nil];
-		[menu setPosition:ccp(240, 60)];
-    [self addChild:menu];
-        [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
-//        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"HighscoreMusic.mp3" loop:YES];
-
-    
-  }
+        
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        [CCMenuItemFont setFontName:@"DomoAregato"];
+        CCMenuItem *item = [CCMenuItemFont itemWithString:@"Play Again!" block:^(id sender) {
+            [[CCDirector sharedDirector] replaceScene:[GameLayer scene]];
+        }];
+        CCMenu *menu = [CCMenu menuWithItems:item, nil];
+		[menu setPosition:ccp(size.width/2, 60)];
+        [self addChild:menu];
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"HighscoreMusic.wav" loop:YES];
+        
+        
+    }
 	return self;
 }
 

@@ -2,8 +2,8 @@
 //  HelloWorldLayer.m
 //  Click Ninja
 //
-//  Created by Michael Jaoudi on 7/4/12.
-//  Copyright __MyCompanyName__ 2012. All rights reserved.
+//  Created by Mike Jaoudi on 7/4/12.
+//  Copyright Mike Jaoudi 2012. All rights reserved.
 //
 
 
