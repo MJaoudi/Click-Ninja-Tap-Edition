@@ -8,6 +8,7 @@
 
 #import "GameLayer.h"
 #import "GameOver.h"
+#import "AppDelegate.h"
 
 @implementation GameLayer
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
@@ -35,7 +36,7 @@
         [self setTouchEnabled:YES];
         
         CGSize size = [[CCDirector sharedDirector] winSize];
-
+        
         firework = [[Firework alloc] init];
         firework.position = ccp(size.width/2,150);
         [self addChild:firework];
@@ -52,7 +53,7 @@
         [self addChild:timerLabel];
         
         score = 0;
-        scoreLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%i",score] fontName:@"DomoAregato" fontSize:30.0f dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentRight ]; 
+        scoreLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%i",score] fontName:@"DomoAregato" fontSize:30.0f dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentRight ];
         scoreLabel.position = ccp(size.width/2,200);
         scoreLabel.color = ccc3(0, 0, 0);
         [self addChild:scoreLabel];
@@ -81,7 +82,7 @@
         
         [particleSystem stopSystem];
         [self scheduleUpdate];
-    
+        
         [self schedule:@selector(timer:) interval:1.0f];
     }
     NSLog(@"BLAH!!");
@@ -96,6 +97,8 @@
     //NSLog(@"%.1f",timer);
     
     if(time <= 0){
+        AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+        [app setScore:score];
         [[CCDirector  sharedDirector] replaceScene:[GameOver scene]];
         
     }
@@ -112,29 +115,31 @@
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     
-    UITouch *touch = [touches anyObject];
-    CGPoint touchLocation = [self convertTouchToNodeSpace:touch];
-    
-    CGPoint buttonLocation = [button convertToNodeSpace:touchLocation];
-    CGRect buttonRect = [button textureRect];
-    buttonRect.origin = CGPointZero;
-    
-    
-    if(CGRectContainsPoint(buttonRect, buttonLocation))
-    {
+    for (UITouch *touch in touches) {
         
-        [firework fire];
-        [ninja startKicking];
-        delay=0;
-        score++;
-        [scoreLabel setString:[NSString stringWithFormat:@"%i",score]];
-        if(![particleSystem active]){
+        
+        CGPoint touchLocation = [self convertTouchToNodeSpace:touch];
+        
+        CGPoint buttonLocation = [button convertToNodeSpace:touchLocation];
+        CGRect buttonRect = [button textureRect];
+        buttonRect.origin = CGPointZero;
+        
+        
+        if(CGRectContainsPoint(buttonRect, buttonLocation))
+        {
             
-            [particleSystem runAction:[CCSequence actions:[CCDelayTime actionWithDuration:0.2], [CCCallFunc actionWithTarget:particleSystem selector:@selector(resetSystem)], nil]];
+            [firework fire];
+            [ninja startKicking];
+            delay=0;
+            score++;
+            [scoreLabel setString:[NSString stringWithFormat:@"%i",score]];
+            if(![particleSystem active]){
+                
+                [particleSystem runAction:[CCSequence actions:[CCDelayTime actionWithDuration:0.2], [CCCallFunc actionWithTarget:particleSystem selector:@selector(resetSystem)], nil]];
+            }
         }
+        
     }
-    
-    
     
     
 }

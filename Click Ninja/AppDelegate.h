@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <TargetConditionals.h>
 #import "cocos2d.h"
 
-@interface AppController : NSObject <UIApplicationDelegate, CCDirectorDelegate>
+@interface AppDelegate : NSObject <UIApplicationDelegate, CCDirectorDelegate>
 {
 	UIWindow *window_;
 	UINavigationController *navController_;
@@ -20,5 +21,6 @@
 @property (nonatomic, strong) UIWindow *window;
 @property (readonly) UINavigationController *navController;
 @property (unsafe_unretained, readonly) CCDirectorIOS *director;
+@property (nonatomic) NSUInteger score;
 
 @end

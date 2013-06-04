@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GameKit/GameKit.h>
 #import "cocos2d.h"
 
 @interface Menu : CCLayerColor{
-    
 }
 
 +(CCScene *) scene;

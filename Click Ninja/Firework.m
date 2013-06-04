@@ -76,7 +76,7 @@
     
     [[fireworks objectAtIndex:index] runAction:[CCSpawn actions:[CCFadeIn actionWithDuration:0],[CCSequence actions:[CCDelayTime actionWithDuration:0.1],animation,nil],[CCSequence actions:[CCDelayTime actionWithDuration:0.5],[CCFadeOut actionWithDuration:0.5f],nil], nil]];
     
-    int angle = arc4random()%160+10;
+    int angle = arc4random()%110+10;
     
     [[fireworks objectAtIndex:index] runAction:[CCSequence actions:[CCMoveTo actionWithDuration:1.0f position:CGPointMake(200*cos(angle*M_PI/180), 200*sin(angle*M_PI/180))], [CCMoveTo actionWithDuration:0.0f position:CGPointMake(0,0)],nil]];
     index = (index+1)%[fireworks count];

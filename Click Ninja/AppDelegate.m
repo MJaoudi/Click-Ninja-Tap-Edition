@@ -10,9 +10,11 @@
 
 #import "AppDelegate.h"
 #import "Menu.h"
+#import "GameOver.h"
+#import "GameCenter.h"
 
 
-@implementation AppController
+@implementation AppDelegate
 
 @synthesize window=window_, navController=navController_, director=director_;
 
@@ -36,7 +38,7 @@
 	director_.wantsFullScreenLayout = YES;
   
 	// Display FSP and SPF
-	[director_ setDisplayStats:YES];
+	[director_ setDisplayStats:NO];
   
 	// set FPS at 60
 	[director_ setAnimationInterval:1.0/60];
@@ -87,7 +89,19 @@
   
     [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:
      @"Elements.plist"];
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:
+     @"LargeElements.plist"];
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
+    
+
+#if TARGET_IPHONE_SIMULATOR
+    [[GameCenter sharedGameCenter] authenticate];
+
+#endif
+    
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"starting"];
+    
+    [glView setMultipleTouchEnabled:YES];
 	[director_ pushScene: [Menu scene]];
   
 	return YES;
