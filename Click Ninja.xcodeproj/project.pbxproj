@@ -22,6 +22,8 @@
 		6F38FC37175297D500772DC5 /* Ninja-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F38FC35175297D500772DC5 /* Ninja-hd.png */; };
 		6F38FC3E1752A61300772DC5 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F38FC3D1752A61300772DC5 /* Menu.m */; };
 		6F4B149715B1CF7F0088ADFE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B149615B1CF7F0088ADFE /* Default.png */; };
+		6F62BBDD175E930E0093BA19 /* Instructions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F62BBDC175E930E0093BA19 /* Instructions.m */; };
+		6F62BBDF175E94670093BA19 /* Instructions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F62BBDE175E94670093BA19 /* Instructions.mp3 */; };
 		6F8CA234174FF640006D9CF7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8CA233174FF640006D9CF7 /* Default-568h@2x.png */; };
 		6F8CA23A175009EC006D9CF7 /* Epic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F8CA239175009EC006D9CF7 /* Epic.mp3 */; };
 		6F8CA23C17501653006D9CF7 /* HighscoreMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F8CA23B17501652006D9CF7 /* HighscoreMusic.wav */; };
@@ -75,6 +77,9 @@
 		6F38FC3C1752A61200772DC5 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Menu.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6F38FC3D1752A61300772DC5 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Menu.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6F4B149615B1CF7F0088ADFE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6F62BBDB175E930E0093BA19 /* Instructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instructions.h; sourceTree = "<group>"; };
+		6F62BBDC175E930E0093BA19 /* Instructions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instructions.m; sourceTree = "<group>"; };
+		6F62BBDE175E94670093BA19 /* Instructions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Instructions.mp3; sourceTree = "<group>"; };
 		6F8CA233174FF640006D9CF7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6F8CA239175009EC006D9CF7 /* Epic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Epic.mp3; sourceTree = "<group>"; };
 		6F8CA23B17501652006D9CF7 /* HighscoreMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HighscoreMusic.wav; sourceTree = "<group>"; };
@@ -184,6 +189,8 @@
 				6FF2697015A50E1500923A0E /* AppDelegate.m */,
 				6F38FC3C1752A61200772DC5 /* Menu.h */,
 				6F38FC3D1752A61300772DC5 /* Menu.m */,
+				6F62BBDB175E930E0093BA19 /* Instructions.h */,
+				6F62BBDC175E930E0093BA19 /* Instructions.m */,
 				6FB58E2615A8A97A0017825F /* GameLayer.h */,
 				6FB58E2715A8A97A0017825F /* GameLayer.m */,
 				6F0E1B3D15AA945200F23670 /* GameOver.h */,
@@ -223,6 +230,7 @@
 				6FAE2FBC17571B0B0065F1D9 /* Icon.png */,
 				6FAE2FBA17571B080065F1D9 /* Icon@2x.png */,
 				6FEF0DD517555EE200DDD0B6 /* Menu.mp3 */,
+				6F62BBDE175E94670093BA19 /* Instructions.mp3 */,
 				6F8CA23B17501652006D9CF7 /* HighscoreMusic.wav */,
 				6F8CA239175009EC006D9CF7 /* Epic.mp3 */,
 				6FAE2FB817570F880065F1D9 /* Wood.plist */,
@@ -327,6 +335,7 @@
 				6F1024A417585DB000E5AF26 /* LargeElements.plist in Resources */,
 				6F1024A517585DB000E5AF26 /* LargeElements.png in Resources */,
 				6F2CA7691759BA30008513E0 /* Default@2x.png in Resources */,
+				6F62BBDF175E94670093BA19 /* Instructions.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +385,7 @@
 				6F0E1B3F15AA945200F23670 /* GameOver.m in Sources */,
 				6F38FC3E1752A61300772DC5 /* Menu.m in Sources */,
 				6FAE2FC117583D1F0065F1D9 /* GameCenter.m in Sources */,
+				6F62BBDD175E930E0093BA19 /* Instructions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

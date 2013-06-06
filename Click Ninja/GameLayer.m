@@ -9,6 +9,7 @@
 #import "GameLayer.h"
 #import "GameOver.h"
 #import "AppDelegate.h"
+#import "GameCenter.h"
 
 @implementation GameLayer
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
@@ -81,11 +82,13 @@
         [self addChild:particleSystem];
         
         [particleSystem stopSystem];
+        
+        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"first" percentComplete:100.0f];
+        
         [self scheduleUpdate];
         
         [self schedule:@selector(timer:) interval:1.0f];
     }
-    NSLog(@"BLAH!!");
     [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Epic.mp3" loop:NO];//play background music
     
 	return self;
@@ -94,7 +97,6 @@
 -(void)timer:(ccTime)dt{
     time = time - 1.0f;
     [timerLabel setString:[NSString stringWithFormat:@"Time:%i",time]];
-    //NSLog(@"%.1f",timer);
     
     if(time <= 0){
         AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];

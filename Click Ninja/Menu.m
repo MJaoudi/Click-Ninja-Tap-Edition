@@ -12,6 +12,7 @@
 #import "GameLayer.h"
 #import "AppDelegate.h"
 #import "GameCenter.h"
+#import "Instructions.h"
 
 @implementation Menu
 
@@ -152,8 +153,7 @@
         gameCenter.position = ccp(size.width/2+160, -gameCenter.contentSize.height/2);
         
         CCMenuItemSprite *help = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"Help.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"Help_selected.png"] block:^(id sender){
-            
-            
+            [[CCDirector sharedDirector] replaceScene:[Instructions scene]];
         }];
         [help setScale:0.8f];
         help.position = ccp(size.width/2-160, -help.contentSize.height/2);
