@@ -101,6 +101,29 @@
     if(time <= 0){
         AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
         [app setScore:score];
+        
+        if (score == 0) {
+            [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"notaps" percentComplete:100.0f];
+        }
+        
+        int totalTaps = [[NSUserDefaults standardUserDefaults] integerForKey:@"taps"];
+        totalTaps+=score;
+        NSLog(@"Total Taps %i",totalTaps);
+        [[NSUserDefaults standardUserDefaults] setInteger:totalTaps forKey:@"taps"];
+        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"1000taps" percentComplete:100*(totalTaps/1000.0f)];
+        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"10000taps" percentComplete:100*(totalTaps/10000.0f)];
+        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"25000taps" percentComplete:100*(totalTaps/25000.0f)];
+        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"100000taps" percentComplete:100*(totalTaps/100000.0f)];
+        
+        
+        int totalGames = [[NSUserDefaults standardUserDefaults] integerForKey:@"games"];
+        totalGames++;
+        [[NSUserDefaults standardUserDefaults] setInteger:totalTaps forKey:@"games"];
+        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"10games" percentComplete:100*(totalGames/10.0f)];
+        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"50games" percentComplete:100*(totalGames/50.0f)];
+        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"100games" percentComplete:100*(totalGames/100.0f)];
+        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"1000games" percentComplete:100*(totalGames/1000.0f)];
+        
         [[CCDirector  sharedDirector] replaceScene:[GameOver scene]];
         
     }

@@ -6,12 +6,14 @@
 //  Copyright Mike Jaoudi 2012. All rights reserved.
 //
 
+#import <FlurrySDK/Flurry.h>
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
 #import "Menu.h"
 #import "GameOver.h"
 #import "GameCenter.h"
+#import "APIKeys.h"
 
 
 @implementation AppDelegate
@@ -99,9 +101,14 @@
 
 #endif
     
+    [Flurry startSession:flurryAPI];
+    [[GameCenter sharedGameCenter] authenticate];
+
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"starting"];
-    
-    [glView setMultipleTouchEnabled:YES];
+    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"games"];
+    [[NSUserDefaults standardUserDefaults] setInteger:10000 forKey:@"taps"];
+
+    [glView setMultipleTouchEnabled:NO];
 	[director_ pushScene: [Menu scene]];
   
 	return YES;

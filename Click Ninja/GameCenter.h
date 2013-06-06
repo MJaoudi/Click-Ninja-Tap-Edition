@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
 
-@interface GameCenter : NSObject<GKLeaderboardViewControllerDelegate>
+@interface GameCenter : NSObject<GKLeaderboardViewControllerDelegate, GKChallengeEventHandlerDelegate>
 
 + (GameCenter *)sharedGameCenter;
 - (void)authenticate;

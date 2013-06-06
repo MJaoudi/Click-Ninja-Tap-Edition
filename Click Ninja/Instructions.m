@@ -7,8 +7,10 @@
 //
 
 #import <SimpleAudioEngine.h>
+#import <FlurrySDK/Flurry.h>
 
 #import "Instructions.h"
+#import "GameCenter.h"
 #import "GameLayer.h"
 
 @implementation Instructions
@@ -113,12 +115,14 @@
         [self addChild:ninja z:10];
         
         
-        CCLabelTTF *helpText = [[CCLabelTTF alloc] initWithString:@"Click the ninja power button as fast as you can before the time runs out." fontName:@"DomoAregato" fontSize:24.0f dimensions:CGSizeMake(200, 200) hAlignment:kCCTextAlignmentLeft];
-        helpText.position = ccp(size.width/2 + 110, 160);
+        CCLabelTTF *helpText = [[CCLabelTTF alloc] initWithString:@"Tap the ninja power button as fast as you can before the time runs out." fontName:@"DomoAregato" fontSize:24.0f dimensions:CGSizeMake(200, 200) hAlignment:kCCTextAlignmentLeft];
+        helpText.position = ccp(size.width/2 + 130, 160);
         helpText.color = ccBLACK;
         [self addChild:helpText z:1];
         
         CCMenuItemSprite *begin = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"BeginButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"BeginButton_selected.png"] block:^(id sender){
+            
+            [Flurry logEvent:@"Help Play"];
             [[CCDirector sharedDirector] replaceScene:[GameLayer scene]];
         }];
         [begin setScale:0.8f];
@@ -133,6 +137,8 @@
         aboutText.color = ccBLACK;
         [self addChild:aboutText z:1];
         
+        
+        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"help" percentComplete:100.0f];
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Instructions.mp3" loop:YES];
         
         

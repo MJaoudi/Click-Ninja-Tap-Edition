@@ -44,14 +44,16 @@ GameCenter *sharedInstance = nil;
     if (!_gameCenterAvailable) return;
     NSLog(@"Authenticating!");
     if (![GKLocalPlayer localPlayer].authenticated) {
-        [[GKLocalPlayer localPlayer] authenticateWithCompletionHandler:^(NSError *error){
+        [[GKLocalPlayer localPlayer] setAuthenticateHandler:^(UIViewController *viewController, NSError *error){
             if(error!=nil){
                 // TODO: Network Errors
             }
             NSLog(@"Authenticated!");
-
+            
         }];
     }
+    GKChallengeEventHandler *eventHandler = [GKChallengeEventHandler challengeEventHandler];
+    eventHandler.delegate = self;
 
     NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
     [nc addObserver:self
@@ -112,6 +114,7 @@ GameCenter *sharedInstance = nil;
 
     if(achievement.completed) return;
 
+    NSLog(@"Percent %f",percent);
     achievement.percentComplete = percent;
     achievement.showsCompletionBanner=YES;
     [_achievementsDictionary setObject:achievement forKey:achievement.identifier];
@@ -150,8 +153,7 @@ GameCenter *sharedInstance = nil;
         _leaderboardController.leaderboardDelegate = self;
         AppDelegate *app=(AppDelegate *)[[UIApplication sharedApplication] delegate];
         
-        [app.navController presentModalViewController:_leaderboardController animated: YES];
-        
+        [app.navController presentViewController:_leaderboardController animated:YES completion:nil];        
     }
     
 }
@@ -159,5 +161,16 @@ GameCenter *sharedInstance = nil;
 -(void)leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController{
     [_leaderboardController dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (void)localPlayerDidCompleteChallenge:(GKChallenge *)challenge{
+    [self reportAchievementIdentifier:@"firstchallenge" percentComplete:100.0f];
+    
+    int challenges = [[NSUserDefaults standardUserDefaults] integerForKey:@"challenges"];
+    challenges++;
+    [[NSUserDefaults standardUserDefaults] setInteger:challenges forKey:@"challenges"];
+    NSLog(@"Challenges %i Percent %f",challenges, 100*(challenges/5.0f));
+    [self reportAchievementIdentifier:@"fivechallenge" percentComplete:100*(challenges/5.0f)];
+}
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <SimpleAudioEngine.h>
+#import <FlurrySDK/Flurry.h>
 
 #import "Menu.h"
 #import "GameLayer.h"
@@ -137,6 +138,7 @@
         
         CCMenuItemSprite *play = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"LoadingSign.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"Sign_selected.png"] block:^(id sender){
             
+            [Flurry logEvent:@"Play"];
             [[CCDirector sharedDirector] replaceScene:[GameLayer scene]];
         }];
         [play setScale:0.8f];
@@ -147,12 +149,15 @@
         
         CCMenuItemSprite *gameCenter = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"GameCenter.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"GameCenter_selected.png"] block:^(id sender){
             
+            [Flurry logEvent:@"GameCenter"];
             [[GameCenter sharedGameCenter] showLeaderboard];
         }];
         [gameCenter setScale:0.8f];
         gameCenter.position = ccp(size.width/2+160, -gameCenter.contentSize.height/2);
         
         CCMenuItemSprite *help = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"Help.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"Help_selected.png"] block:^(id sender){
+            
+            [Flurry logEvent:@"Help"];
             [[CCDirector sharedDirector] replaceScene:[Instructions scene]];
         }];
         [help setScale:0.8f];

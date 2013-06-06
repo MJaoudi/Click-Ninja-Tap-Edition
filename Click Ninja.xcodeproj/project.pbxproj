@@ -24,6 +24,7 @@
 		6F4B149715B1CF7F0088ADFE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4B149615B1CF7F0088ADFE /* Default.png */; };
 		6F62BBDD175E930E0093BA19 /* Instructions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F62BBDC175E930E0093BA19 /* Instructions.m */; };
 		6F62BBDF175E94670093BA19 /* Instructions.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F62BBDE175E94670093BA19 /* Instructions.mp3 */; };
+		6F62BBE317605BD10093BA19 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 6F62BBE217605BD00093BA19 /* iTunesArtwork */; };
 		6F8CA234174FF640006D9CF7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8CA233174FF640006D9CF7 /* Default-568h@2x.png */; };
 		6F8CA23A175009EC006D9CF7 /* Epic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F8CA239175009EC006D9CF7 /* Epic.mp3 */; };
 		6F8CA23C17501653006D9CF7 /* HighscoreMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6F8CA23B17501652006D9CF7 /* HighscoreMusic.wav */; };
@@ -53,7 +54,6 @@
 		6FF267FE15A50E1300923A0E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF267FD15A50E1300923A0E /* fps_images.png */; };
 		6FF2680015A50E1300923A0E /* fps_images-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF267FF15A50E1300923A0E /* fps_images-hd.png */; };
 		6FF2680215A50E1300923A0E /* fps_images-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF2680115A50E1300923A0E /* fps_images-ipadhd.png */; };
-		6FF2681115A50E1300923A0E /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 6FF2681015A50E1300923A0E /* iTunesArtwork */; };
 		6FF2696E15A50E1500923A0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2696D15A50E1500923A0E /* main.m */; };
 		6FF2697115A50E1500923A0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF2697015A50E1500923A0E /* AppDelegate.m */; };
 		77922293EF474EF2B3535449 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF303FF41A4AC49663EB1C /* libPods.a */; };
@@ -80,6 +80,8 @@
 		6F62BBDB175E930E0093BA19 /* Instructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instructions.h; sourceTree = "<group>"; };
 		6F62BBDC175E930E0093BA19 /* Instructions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instructions.m; sourceTree = "<group>"; };
 		6F62BBDE175E94670093BA19 /* Instructions.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Instructions.mp3; sourceTree = "<group>"; };
+		6F62BBE1176058100093BA19 /* APIKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIKeys.h; sourceTree = "<group>"; };
+		6F62BBE217605BD00093BA19 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		6F8CA233174FF640006D9CF7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6F8CA239175009EC006D9CF7 /* Epic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Epic.mp3; sourceTree = "<group>"; };
 		6F8CA23B17501652006D9CF7 /* HighscoreMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HighscoreMusic.wav; sourceTree = "<group>"; };
@@ -115,7 +117,6 @@
 		6FF267FF15A50E1300923A0E /* fps_images-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fps_images-hd.png"; path = "Resources/fps_images-hd.png"; sourceTree = "<group>"; };
 		6FF2680115A50E1300923A0E /* fps_images-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fps_images-ipadhd.png"; path = "Resources/fps_images-ipadhd.png"; sourceTree = "<group>"; };
 		6FF2680F15A50E1300923A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		6FF2681015A50E1300923A0E /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
 		6FF2696C15A50E1500923A0E /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		6FF2696D15A50E1500923A0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6FF2696F15A50E1500923A0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -185,6 +186,7 @@
 			children = (
 				6FAE2FBF17583D1E0065F1D9 /* GameCenter.h */,
 				6FAE2FC017583D1E0065F1D9 /* GameCenter.m */,
+				6F62BBE1176058100093BA19 /* APIKeys.h */,
 				6FF2696F15A50E1500923A0E /* AppDelegate.h */,
 				6FF2697015A50E1500923A0E /* AppDelegate.m */,
 				6F38FC3C1752A61200772DC5 /* Menu.h */,
@@ -239,7 +241,7 @@
 				6FF267FF15A50E1300923A0E /* fps_images-hd.png */,
 				6FF2680115A50E1300923A0E /* fps_images-ipadhd.png */,
 				6FF2680F15A50E1300923A0E /* Info.plist */,
-				6FF2681015A50E1300923A0E /* iTunesArtwork */,
+				6F62BBE217605BD00093BA19 /* iTunesArtwork */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -308,7 +310,6 @@
 				6FF267FE15A50E1300923A0E /* fps_images.png in Resources */,
 				6FF2680015A50E1300923A0E /* fps_images-hd.png in Resources */,
 				6FF2680215A50E1300923A0E /* fps_images-ipadhd.png in Resources */,
-				6FF2681115A50E1300923A0E /* iTunesArtwork in Resources */,
 				6FB58E3E15A8AA9D0017825F /* Ninja.plist in Resources */,
 				6FB58E3F15A8AA9D0017825F /* Ninja.png in Resources */,
 				15E50DC015AD4AAB0076918A /* DomoAregato.ttf in Resources */,
@@ -336,6 +337,7 @@
 				6F1024A517585DB000E5AF26 /* LargeElements.png in Resources */,
 				6F2CA7691759BA30008513E0 /* Default@2x.png in Resources */,
 				6F62BBDF175E94670093BA19 /* Instructions.mp3 in Resources */,
+				6F62BBE317605BD10093BA19 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +460,7 @@
 				GCC_PREFIX_HEADER = "Click Ninja/Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = "Click Ninja/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -476,6 +479,7 @@
 				GCC_PREFIX_HEADER = "Click Ninja/Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = "Click Ninja/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

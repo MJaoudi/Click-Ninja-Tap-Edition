@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "GameCenter.h"
 #import "Menu.h"
+#import <FlurrySDK/Flurry.h>
 
 @implementation GameOver
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
@@ -81,6 +82,8 @@
         
         CCMenuItemSprite *gameCenter = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"GameCenter.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"GameCenter_selected.png"] block:^(id sender){
             
+            
+            [Flurry logEvent:@"GameCenter - Game Over"];
             [[GameCenter sharedGameCenter] showLeaderboard];
             
         }];
@@ -89,11 +92,14 @@
         
         CCMenuItemSprite *again = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"AgainButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"AgainButton.png"] block:^(id sender){
             
+            [Flurry logEvent:@"Play Again"];
             [[CCDirector sharedDirector] replaceScene:[GameLayer scene]];
         }];
         again.position = ccp(size.width/2-90, 130);
         
         CCMenuItemSprite *menuButton = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithSpriteFrameName:@"MenuButton.png"] selectedSprite:[CCSprite spriteWithSpriteFrameName:@"MenuButton.png"] block:^(id sender){
+            
+            [Flurry logEvent:@"Back to Manu"];
             [[CCDirector sharedDirector] replaceScene:[Menu scene]];
 
         }];
