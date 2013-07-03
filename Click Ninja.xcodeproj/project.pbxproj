@@ -103,7 +103,7 @@
 		6FEF0DD9175562FE00DDD0B6 /* Elements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Elements.plist; path = Resources/Elements.plist; sourceTree = "<group>"; };
 		6FEF0DDB175563FF00DDD0B6 /* Elements-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Elements-hd.plist"; path = "Resources/Elements-hd.plist"; sourceTree = "<group>"; };
 		6FEF0DDC175563FF00DDD0B6 /* Elements-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Elements-hd.png"; path = "Resources/Elements-hd.png"; sourceTree = "<group>"; };
-		6FF267E315A50E1300923A0E /* Click Ninja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Click Ninja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF267E315A50E1300923A0E /* Kick Ninja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kick Ninja.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF267E715A50E1300923A0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6FF267E915A50E1300923A0E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		6FF267EB15A50E1300923A0E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -159,7 +159,7 @@
 		6FF267E415A50E1300923A0E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FF267E315A50E1300923A0E /* Click Ninja.app */,
+				6FF267E315A50E1300923A0E /* Kick Ninja.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,9 +258,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6FF267E215A50E1300923A0E /* Click Ninja */ = {
+		6FF267E215A50E1300923A0E /* Kick Ninja */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FF2697715A50E1500923A0E /* Build configuration list for PBXNativeTarget "Click Ninja" */;
+			buildConfigurationList = 6FF2697715A50E1500923A0E /* Build configuration list for PBXNativeTarget "Kick Ninja" */;
 			buildPhases = (
 				F9CBBF9DD5FC47E488336059 /* Check Pods Manifest.lock */,
 				6FF267DF15A50E1300923A0E /* Sources */,
@@ -272,9 +272,9 @@
 			);
 			dependencies = (
 			);
-			name = "Click Ninja";
+			name = "Kick Ninja";
 			productName = "Click Ninja";
-			productReference = 6FF267E315A50E1300923A0E /* Click Ninja.app */;
+			productReference = 6FF267E315A50E1300923A0E /* Kick Ninja.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -297,7 +297,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FF267E215A50E1300923A0E /* Click Ninja */,
+				6FF267E215A50E1300923A0E /* Kick Ninja */,
 			);
 		};
 /* End PBXProject section */
@@ -415,7 +415,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,7 +441,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,7 +500,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FF2697715A50E1500923A0E /* Build configuration list for PBXNativeTarget "Click Ninja" */ = {
+		6FF2697715A50E1500923A0E /* Build configuration list for PBXNativeTarget "Kick Ninja" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FF2697815A50E1500923A0E /* Debug */,

@@ -114,7 +114,6 @@ GameCenter *sharedInstance = nil;
 
     if(achievement.completed) return;
 
-    NSLog(@"Percent %f",percent);
     achievement.percentComplete = percent;
     achievement.showsCompletionBanner=YES;
     [_achievementsDictionary setObject:achievement forKey:achievement.identifier];
@@ -168,7 +167,7 @@ GameCenter *sharedInstance = nil;
     int challenges = [[NSUserDefaults standardUserDefaults] integerForKey:@"challenges"];
     challenges++;
     [[NSUserDefaults standardUserDefaults] setInteger:challenges forKey:@"challenges"];
-    NSLog(@"Challenges %i Percent %f",challenges, 100*(challenges/5.0f));
+
     [self reportAchievementIdentifier:@"fivechallenge" percentComplete:100*(challenges/5.0f)];
 }
 

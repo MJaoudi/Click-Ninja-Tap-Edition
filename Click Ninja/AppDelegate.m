@@ -96,17 +96,11 @@
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
     
 
-#if TARGET_IPHONE_SIMULATOR
-    [[GameCenter sharedGameCenter] authenticate];
-
-#endif
     
     [Flurry startSession:flurryAPI];
     [[GameCenter sharedGameCenter] authenticate];
 
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"starting"];
-    [[NSUserDefaults standardUserDefaults] setInteger:0 forKey:@"games"];
-    [[NSUserDefaults standardUserDefaults] setInteger:10000 forKey:@"taps"];
 
     [glView setMultipleTouchEnabled:NO];
 	[director_ pushScene: [Menu scene]];

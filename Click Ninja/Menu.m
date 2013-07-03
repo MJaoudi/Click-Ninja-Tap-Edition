@@ -41,15 +41,15 @@
         
         CGSize size = [[CCDirector sharedDirector] winSize];
         
-        CCLabelTTF *titleLabel = [[CCLabelTTF alloc] initWithString:@"Click Ninja" fontName:@"DomoAregato" fontSize:56.0f dimensions:CGSizeMake(400, 70) hAlignment:kCCTextAlignmentCenter];
-        titleLabel.position = ccp(size.width/2, 270);
+        CCLabelTTF *titleLabel = [[CCLabelTTF alloc] initWithString:@"Kick Ninja" fontName:@"DomoAregato" fontSize:56.0f dimensions:CGSizeMake(400, 70) hAlignment:kCCTextAlignmentCenter];
+        titleLabel.position = ccp(size.width/2, 250);
         titleLabel.color = ccBLACK;
         [self addChild:titleLabel z:1];
         
-        CCLabelTTF *subTitleLabel = [[CCLabelTTF alloc] initWithString:@"Tap Edition" fontName:@"DomoAregato" fontSize:30.0f dimensions:CGSizeMake(400, 70) hAlignment:kCCTextAlignmentCenter];
+        /*CCLabelTTF *subTitleLabel = [[CCLabelTTF alloc] initWithString:@"Tap Edition" fontName:@"DomoAregato" fontSize:30.0f dimensions:CGSizeMake(400, 70) hAlignment:kCCTextAlignmentCenter];
         subTitleLabel.position = ccp(size.width/2, 220);
         subTitleLabel.color = ccBLACK;
-        [self addChild:subTitleLabel z:1];
+        [self addChild:subTitleLabel z:1];*/
         
         CCSprite *house = [[CCSprite alloc] initWithSpriteFrameName:@"House.png"];
         house.position = ccp(size.width/2, 100);
@@ -86,7 +86,7 @@
         }
         
         CCSprite *tree = [[CCSprite alloc] initWithSpriteFrameName:@"Tree3.png"];
-        tree.position = ccp(size.width/2+220, 130);
+        tree.position = ccp(size.width/2+250, 130);
         [self addChild:tree z:4];
         
         CCSprite *tree2 = [[CCSprite alloc] initWithSpriteFrameName:@"Tree3.png"];
@@ -117,7 +117,7 @@
         
         
         CCSprite *crouchNinja = [[CCSprite alloc] initWithSpriteFrameName:@"CrouchNinja_1.png"];
-        crouchNinja.position = ccp(size.width/2+110, 298);
+        crouchNinja.position = ccp(size.width/2+110, 278);
         [crouchNinja setScale:0.6];
         [self addChild:crouchNinja];
         
