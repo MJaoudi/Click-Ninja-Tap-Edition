@@ -134,6 +134,19 @@
                 <key>sourceSize</key>
                 <string>{174,95}</string>
             </dict>
+            <key>Replay.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{255,835},{48,48}}</string>
+                <key>offset</key>
+                <string>{-1,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{48,48}}</string>
+                <key>sourceSize</key>
+                <string>{50,50}</string>
+            </dict>
             <key>Sign.png</key>
             <dict>
                 <key>frame</key>
@@ -183,7 +196,7 @@
             <key>size</key>
             <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:48330f5ccf611b0e648919632b09fbc4$</string>
+            <string>$TexturePacker:SmartUpdate:24700cfd64b75c7475b9316f8cfe6fa6$</string>
             <key>textureFileName</key>
             <string>LargeElements-hd.png</string>
         </dict>

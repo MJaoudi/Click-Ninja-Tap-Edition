@@ -93,6 +93,8 @@
      @"Elements.plist"];
     [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:
      @"LargeElements.plist"];
+    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:
+     @"Ninja.plist"];
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
     
 
@@ -157,6 +159,42 @@
 -(void) applicationSignificantTimeChange:(UIApplication *)application
 {
 	[[CCDirector sharedDirector] setNextDeltaTimeZero:YES];
+}
+
+-(void)makeBanner{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        banner = [[GADBannerView alloc] initWithAdSize:kGADAdSizeLeaderboard origin:CGPointMake(80, 270)];
+    } else {
+        banner = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner origin:CGPointMake(80, 270)];
+    }
+    
+    banner.adUnitID = BANNERADID;
+    banner.delegate=self;
+    GADRequest *request = [GADRequest request];
+    banner.rootViewController = self.navController.topViewController;
+    [banner loadRequest:request];
+
+}
+
+-(GADBannerView*)getBanner{
+    if(banner==nil){
+        [self makeBanner];
+    }
+    return banner;
+}
+
+- (void)adView:(GADBannerView *)view
+didFailToReceiveAdWithError:(GADRequestError *)error{
+    NSLog(@"Failed!");
+    tries++;
+    if(tries<10){
+        [self makeBanner];
+    }
+    
+}
+
+- (void)adViewDidReceiveAd:(GADBannerView *)view{
+    tries = 0;
 }
 
 @end

@@ -128,6 +128,8 @@
         </struct>
         <key>dataFileName</key>
         <filename>LargeElements-hd.plist</filename>
+        <key>multiPack</key>
+        <false/>
         <key>mainExtension</key>
         <string>-hd.</string>
         <key>forceIdenticalLayout</key>

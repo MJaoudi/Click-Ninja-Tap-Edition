@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "GameCenter.h"
 #import "Menu.h"
+#import "AppDelegate.h"
 #import <FlurrySDK/Flurry.h>
 
 @implementation GameOver
@@ -42,7 +43,7 @@
         AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate];
         
         CCSprite *ninja = [[CCSprite alloc] initWithSpriteFrameName:@"RobeNinja_1.png"];
-        ninja.position = ccp(size.width/2-90,210);
+        ninja.position = ccp(size.width/2-90,190);
         ninja.anchorPoint = ccp(0.5,.7);
         [ninja setScale:0.8];
         [self addChild:ninja z:10];
@@ -103,7 +104,7 @@
             [[CCDirector sharedDirector] replaceScene:[Menu scene]];
 
         }];
-        menuButton.position = ccp(size.width/2+40, 60);
+        menuButton.position = ccp(size.width/2+40, 90);
         
         CCSprite *swordNinja = [[CCSprite alloc] initWithSpriteFrameName:@"SwordNinja.png"];
         [swordNinja setScale:1.0];
@@ -120,8 +121,20 @@
         
         [[GameCenter sharedGameCenter] reportScore:app.score forLeaderboard:@"leaderboard"];
         
+        
+        _banner = [app getBanner];
+        _banner.frame = CGRectMake(size.width/2-_banner.frame.size.width/2, size.height-_banner.frame.size.height, _banner.frame.size.width, _banner.frame.size.height);
+        [app.navController.topViewController.view addSubview:_banner];
+        
+        
     }
 	return self;
+}
+
+- (void)dealloc{
+    CCLOG(@"Dealloc %@",self);
+    _banner.delegate = nil;
+    [_banner removeFromSuperview];
 }
 
 -(void)gameCenter{

@@ -9,17 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface Ninja : CCSpriteBatchNode {
-  CCAnimation *sword;
-  CCAnimation *jump;
-  CCAnimation *kick;
-  CCAnimation *land;
-  
-  CCSprite *ninja;
-  
-  BOOL kicking;
+@interface Ninja : CCSprite {
+    CCAnimation *sword;
+    CCAnimation *jump;
+    CCAnimation *kick;
+    CCAnimation *land;
+    CCAnimation *start;
+        
+    BOOL kicking;
 }
 
+-(void)robeOff;
 -(void)startKicking;
 -(void)stopKicking;
 @end

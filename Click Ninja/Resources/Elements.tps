@@ -112,6 +112,8 @@
         </struct>
         <key>dataFileName</key>
         <filename>Elements.plist</filename>
+        <key>multiPack</key>
+        <false/>
         <key>mainExtension</key>
         <string></string>
         <key>forceIdenticalLayout</key>

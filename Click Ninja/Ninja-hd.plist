@@ -7,7 +7,7 @@
             <key>Kick01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,158},{122,166}}</string>
+                <string>{{130,494},{122,166}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,7 +20,7 @@
             <key>Kick02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{126,158},{130,154}}</string>
+                <string>{{378,504},{130,154}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -33,7 +33,7 @@
             <key>Kick03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{198,118}}</string>
+                <string>{{2,170},{198,118}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,7 +46,7 @@
             <key>Kick04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{202,2},{174,118}}</string>
+                <string>{{2,290},{174,118}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -59,7 +59,7 @@
             <key>Kick05.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{378,2},{130,154}}</string>
+                <string>{{178,338},{130,154}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -72,7 +72,7 @@
             <key>Kick06.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,326},{126,158}}</string>
+                <string>{{2,432},{126,158}}</string>
                 <key>offset</key>
                 <string>{2,0}</string>
                 <key>rotated</key>
@@ -85,7 +85,7 @@
             <key>Kick07.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,158},{122,166}}</string>
+                <string>{{130,494},{122,166}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -95,6 +95,97 @@
                 <key>sourceSize</key>
                 <string>{122,166}</string>
             </dict>
+            <key>Robe.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,410},{128,20}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{128,20}}</string>
+                <key>sourceSize</key>
+                <string>{128,20}</string>
+            </dict>
+            <key>RobeNinja_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{310,338},{66,170}}</string>
+                <key>offset</key>
+                <string>{-1,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,4},{66,170}}</string>
+                <key>sourceSize</key>
+                <string>{68,174}</string>
+            </dict>
+            <key>RobeNinja_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{390,334},{76,168}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{76,168}}</string>
+                <key>sourceSize</key>
+                <string>{76,168}</string>
+            </dict>
+            <key>RobeNinja_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{390,170},{114,162}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{114,162}}</string>
+                <key>sourceSize</key>
+                <string>{114,162}</string>
+            </dict>
+            <key>RobeNinja_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{202,170},{186,166}}</string>
+                <key>offset</key>
+                <string>{34,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,0},{186,166}}</string>
+                <key>sourceSize</key>
+                <string>{260,166}</string>
+            </dict>
+            <key>RobeNinja_5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{256,2},{206,166}}</string>
+                <key>offset</key>
+                <string>{-42,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{206,166}}</string>
+                <key>sourceSize</key>
+                <string>{290,166}</string>
+            </dict>
+            <key>RobeNinja_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{252,166}}</string>
+                <key>offset</key>
+                <string>{-64,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{10,0},{252,166}}</string>
+                <key>sourceSize</key>
+                <string>{400,166}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -103,9 +194,9 @@
             <key>realTextureFileName</key>
             <string>Ninja-hd.png</string>
             <key>size</key>
-            <string>{512,512}</string>
+            <string>{512,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:56dda46c5dfdcd1943b009228ffa9d37$</string>
+            <string>$TexturePacker:SmartUpdate:2ff9ebe6d9ddd774bb7eb6e77554e030$</string>
             <key>textureFileName</key>
             <string>Ninja-hd.png</string>
         </dict>

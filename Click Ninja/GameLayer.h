@@ -13,21 +13,7 @@
 #import "Ninja.h"
 
 @interface GameLayer : CCLayerColor {
-  Firework *firework;
-  Ninja *ninja;
-  
-  int delay;
-  
-  int time;
-  
-  int score;
-  
-  CCLabelTTF *timerLabel;
-  CCLabelTTF *scoreLabel;
-  
-  CCSprite *button;
-    
-    CCParticleSystem *particleSystem;
+
 }
 
 +(CCScene *) scene;

@@ -8,15 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import <TargetConditionals.h>
+#import <AdMob/GADBannerView.h>
 #import "cocos2d.h"
 
-@interface AppDelegate : NSObject <UIApplicationDelegate, CCDirectorDelegate>
+@interface AppDelegate : NSObject <UIApplicationDelegate, CCDirectorDelegate, GADBannerViewDelegate>
 {
 	UIWindow *window_;
 	UINavigationController *navController_;
   
 	CCDirectorIOS	*__unsafe_unretained director_;							// weak ref
+    GADBannerView *banner;
+    int tries;
+    
 }
+
+-(void)makeBanner;
+-(GADBannerView*)getBanner;
 
 @property (nonatomic, strong) UIWindow *window;
 @property (readonly) UINavigationController *navController;

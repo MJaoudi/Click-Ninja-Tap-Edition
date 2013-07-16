@@ -11,7 +11,26 @@
 #import "AppDelegate.h"
 #import "GameCenter.h"
 
-@implementation GameLayer
+@implementation GameLayer{
+    Firework *firework;
+    Ninja *ninja;
+    
+    CCSprite *button;
+    CCSprite *resetButton;
+
+    CCLabelTTF *timerLabel;
+    CCLabelTTF *scoreLabel;
+    CCLabelTTF *startLabel;
+    
+    CCParticleSystem *particleSystem;
+
+    
+    int delay;
+    int time;
+    int score;
+    
+    BOOL started;
+}
 // Helper class method that creates a Scene with the HelloWorldLayer as the only child.
 +(CCScene *) scene
 {
@@ -42,10 +61,9 @@
         firework.position = ccp(size.width/2,150);
         [self addChild:firework];
         ninja = [[Ninja alloc] init];
-        ninja.position = ccp(size.width/2-90,160);
+        ninja.position = ccp(size.width/2-90,170);
         ninja.anchorPoint = ccp(0.5,.7);
         [self addChild:ninja z:10];
-        time = 30;
         
         
         timerLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"Time:%i",time] fontName:@"DomoAregato" fontSize:30.0f dimensions:CGSizeMake(130, 45) hAlignment:kCCTextAlignmentLeft];
@@ -55,13 +73,25 @@
         
         score = 0;
         scoreLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"%i",score] fontName:@"DomoAregato" fontSize:30.0f dimensions:CGSizeMake(80, 45) hAlignment:kCCTextAlignmentRight ];
-        scoreLabel.position = ccp(size.width/2,200);
+        scoreLabel.position = ccp(size.width/2,190);
         scoreLabel.color = ccc3(0, 0, 0);
         [self addChild:scoreLabel];
+        [scoreLabel setScale:0.0f];
+
+        
+        startLabel = [[CCLabelTTF alloc] initWithString:[NSString stringWithFormat:@"Ready"] fontName:@"DomoAregato" fontSize:50.0f dimensions:CGSizeMake(130, 45) hAlignment:kCCTextAlignmentCenter];
+        startLabel.position = ccp(size.width/2,250);
+        startLabel.color = ccc3(0, 0, 0);
+        [self addChild:startLabel];
         
         button = [[CCSprite alloc] initWithSpriteFrameName:@"TapButton.png"];
         button.position = ccp(size.width/2,160);
         [self addChild:button];
+        [button setScale:0.0f];
+        
+        resetButton = [[CCSprite alloc] initWithSpriteFrameName:@"Replay.png"];
+        resetButton.position = ccp(25, 260);
+        [self addChild:resetButton];
         
         
         CCSprite *hill = [[CCSprite alloc] initWithSpriteFrameName:@"Hill.png"];
@@ -87,11 +117,56 @@
         
         [self scheduleUpdate];
         
-        [self schedule:@selector(timer:) interval:1.0f];
     }
-    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Epic.mp3" loop:NO];//play background music
+    [self setup];
     
 	return self;
+}
+
+-(void)setup{
+    started = NO;
+    time = 30;
+    score = 0;
+    
+    [button stopAllActions];
+    [scoreLabel stopAllActions];
+    [startLabel stopAllActions];
+    
+    [button runAction:[CCScaleTo actionWithDuration:0.3f scale:0.0f]];
+    [scoreLabel runAction:[CCScaleTo actionWithDuration:0.3f scale:0.0f]];
+
+    [timerLabel setString:[NSString stringWithFormat:@"Time:%i",time]];
+    [scoreLabel setString:[NSString stringWithFormat:@"%i",score]];
+
+    
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+    [[SimpleAudioEngine sharedEngine] preloadBackgroundMusic:@"Epic.mp3"];
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(begin) object:nil];
+    [self performSelector:@selector(begin) withObject:nil afterDelay:3.0f];
+    [self unschedule:@selector(timer:)];
+    
+    [particleSystem stopSystem];
+
+    [ninja robeOff];
+    [button runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.8f],[CCScaleTo actionWithDuration:0.2f scale:1.0f], nil]];
+    [scoreLabel runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.8f],[CCScaleTo actionWithDuration:0.2f scale:1.0f], nil]];
+    [startLabel setOpacity:255.0f];
+    [startLabel runAction:[CCSequence actions:[CCCallBlock actionWithBlock:^(){
+        [startLabel setString:@"Ready"];
+    }],[CCDelayTime actionWithDuration:1.4f], [CCScaleTo actionWithDuration:0.1f scale:0.0f], [CCCallBlock actionWithBlock:^(){
+        [startLabel setString:@"Set"];
+    }],[CCScaleTo actionWithDuration:0.1f scale:1.0f], [CCDelayTime actionWithDuration:1.3f], [CCScaleTo actionWithDuration:0.1f scale:0.0f], [CCCallBlock actionWithBlock:^(){
+        [startLabel setString:@"KICK!"];
+    }],[CCScaleTo actionWithDuration:0.1f scale:1.0f], [CCDelayTime actionWithDuration:0.5f], [CCFadeOut actionWithDuration:0.5f], nil]];
+
+    
+}
+
+-(void)begin{
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Epic.mp3" loop:NO];//play background music
+
+    [self schedule:@selector(timer:) interval:1.0f];
+    started = YES;
 }
 
 -(void)timer:(ccTime)dt{
@@ -106,22 +181,10 @@
             [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"notaps" percentComplete:100.0f];
         }
         
-        int totalTaps = [[NSUserDefaults standardUserDefaults] integerForKey:@"taps"];
-        totalTaps+=score;
-        [[NSUserDefaults standardUserDefaults] setInteger:totalTaps forKey:@"taps"];
-        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"1000taps" percentComplete:100*(totalTaps/1000.0f)];
-        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"10000taps" percentComplete:100*(totalTaps/10000.0f)];
-        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"25000taps" percentComplete:100*(totalTaps/25000.0f)];
-        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"100000taps" percentComplete:100*(totalTaps/100000.0f)];
+        [self recordTaps];
+        [self recordGames];
         
-        
-        int totalGames = [[NSUserDefaults standardUserDefaults] integerForKey:@"games"];
-        totalGames++;
-        [[NSUserDefaults standardUserDefaults] setInteger:totalGames forKey:@"games"];
-        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"10games" percentComplete:100*(totalGames/10.0f)];
-        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"50games" percentComplete:100*(totalGames/50.0f)];
-        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"100games" percentComplete:100*(totalGames/100.0f)];
-        [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"1000games" percentComplete:100*(totalGames/1000.0f)];
+
         
         [[CCDirector  sharedDirector] replaceScene:[GameOver scene]];
         
@@ -148,8 +211,11 @@
         CGRect buttonRect = [button textureRect];
         buttonRect.origin = CGPointZero;
         
+        CGRect resetRect = [resetButton textureRect];
+        resetRect.origin = CGPointZero;
         
-        if(CGRectContainsPoint(buttonRect, buttonLocation))
+        
+        if(CGRectContainsPoint(buttonRect, buttonLocation) && started)
         {
             
             [firework fire];
@@ -163,9 +229,36 @@
             }
         }
         
+        if(CGRectContainsPoint(resetRect, [resetButton convertToNodeSpace:touchLocation]) && started){
+            started = NO;
+            [self recordTaps];
+            [self setup];
+        }
+        
     }
     
     
+}
+
+-(void)recordTaps{
+    int totalTaps = [[NSUserDefaults standardUserDefaults] integerForKey:@"taps"];
+    totalTaps+=score;
+    [[NSUserDefaults standardUserDefaults] setInteger:totalTaps forKey:@"taps"];
+    [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"1000taps" percentComplete:100*(totalTaps/1000.0f)];
+    [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"10000taps" percentComplete:100*(totalTaps/10000.0f)];
+    [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"25000taps" percentComplete:100*(totalTaps/25000.0f)];
+    [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"100000taps" percentComplete:100*(totalTaps/100000.0f)];
+}
+
+-(void)recordGames{
+    
+    int totalGames = [[NSUserDefaults standardUserDefaults] integerForKey:@"gameskey"];
+    totalGames++;
+    [[NSUserDefaults standardUserDefaults] setInteger:totalGames forKey:@"gameskey"];
+    [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"10games" percentComplete:100*(totalGames/10.0f)];
+    [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"50games" percentComplete:100*(totalGames/50.0f)];
+    [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"100games" percentComplete:100*(totalGames/100.0f)];
+    [[GameCenter sharedGameCenter] reportAchievementIdentifier:@"1000games" percentComplete:100*(totalGames/1000.0f)];
 }
 // on "dealloc" you need to release all your retained objects
 
